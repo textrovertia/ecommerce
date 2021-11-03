@@ -77,7 +77,7 @@
                 sit nullam.
               </p>
               <ul class="actions">
-                <li><a href="#" class="button big">Learn More</a></li>
+                <li><a href="login/signup.php" class="button big">Learn More</a></li>
               </ul>
             </div>
             <span class="image object">
@@ -102,7 +102,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -116,7 +116,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -130,7 +130,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -144,7 +144,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -167,7 +167,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -181,7 +181,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -195,7 +195,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -209,7 +209,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -244,7 +244,7 @@
                 </ul>
               </li>
               <li><a href="./login/login.php">Log In</a></li>
-              <li><a href="./login/signup.php">Sign Up</a></li>
+              <li><a href="./login/../login/signup.php">Sign Up</a></li>
             </ul>
           </nav>
 

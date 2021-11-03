@@ -41,7 +41,7 @@
 
         <div class="right-half col-md-6 mx-auto my-auto">
           <header class="major">
-            <h2>Login</h2>
+            <h2>Sign Up</h2>
           </header>
           <form action="POST" method="post" id="login-form">
             <!-- Email -->
@@ -84,11 +84,13 @@
             <br />
             <br />
 
-            <input type="submit" value="Sign Up" />
+            <a href="../functionalities/payment.php">
+              <input type="button" value="Sign Up" />
+            </a>
           </form>
           <div class="p">
             Already have an account? Log in
-            <span> <a href="./login.php">here</a> </span>
+            <span> <a href="./login.html">here</a> </span>
           </div>
         </div>
       </div>
