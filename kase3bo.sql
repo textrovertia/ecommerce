@@ -18,8 +18,6 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `shoppn`
---
 
 -- --------------------------------------------------------
 
@@ -27,9 +25,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `brands`
 --
 
-CREATE DATABASE kase3bo;
+-- CREATE DATABASE kase3bo;
 
-USE kase3bo;
+-- USE kase3bo;
 
 
 --
@@ -43,7 +41,6 @@ CREATE TABLE `customer` (
   `customer_pass` varchar(150) NOT NULL,
   `customer_class` int(4) NOT NULL,
   `customer_contact` varchar(15) NOT NULL,
-  `customer_image` varchar(100) DEFAULT NULL,
   `user_role` int(11) DEFAULT '2'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

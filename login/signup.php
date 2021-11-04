@@ -43,7 +43,7 @@
           <header class="major">
             <h2>Sign Up</h2>
           </header>
-          <form action="POST" method="post" id="login-form">
+          <form action="../login/registerprocess.php" method="post" id="login-form">
             <!-- Email -->
             <div class="form-item">
               <label for="login"><h3>Email</h3></label>
@@ -54,7 +54,19 @@
             <!-- Username -->
             <div class="form-item">
               <label for="login"><h3>Username</h3></label>
-              <input class="input" id="email" name="email" />
+              <input class="input" id="username" name="username" />
+            </div>
+            <br />
+
+            <div class="form-item">
+              <label for="login"><h3>Class</h3></label>
+              <input class="input" id="class" name="class" />
+            </div>
+            <br />
+
+            <div class="form-item">
+              <label for="login"><h3>Contact Number</h3></label>
+              <input class="input" id="number" name="number" />
             </div>
             <br />
 
@@ -84,8 +96,8 @@
             <br />
             <br />
 
-            <a href="../functionalities/payment.php">
-              <input type="button" value="Sign Up" />
+            <!-- <a href="../functionalities/payment.php"> -->
+              <input type="submit" value="Sign Up" name="signupButton"/>
             </a>
           </form>
           <div class="p">
