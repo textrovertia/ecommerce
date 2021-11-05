@@ -24,7 +24,7 @@
         <div class="inner">
           <!-- Header -->
           <?php
-              require_once '../model/header.php';
+              require_once './model/header.php';
               $header = new Header();
               echo $header->get_html();
             ?>

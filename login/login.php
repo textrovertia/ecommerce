@@ -33,7 +33,7 @@
           <header class="major">
             <h2>Login</h2>
           </header>
-          <form action="POST" method="post" id="login-form">
+          <form action="./loginprocess.php" method="post" id="login-form">
             <!-- Username -->
             <div class="form-item">
               <label for="login"><h3>Username</h3></label>
