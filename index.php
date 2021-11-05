@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
     <title>Kaseɛbo</title>
@@ -28,38 +23,11 @@
       <div id="main">
         <div class="inner">
           <!-- Header -->
-          <header id="header">
-            <a href="index.html" class="logo"
-              ><strong>Kaseɛbo</strong> by Group 2</a
-            >
-            <ul class="icons">
-              <li>
-                <a href="#" class="icon brands fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-snapchat-ghost"
-                  ><span class="label">Snapchat</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="icon brands fa-medium-m"
-                  ><span class="label">Medium</span></a
-                >
-              </li>
-            </ul>
-          </header>
+          <?php
+              require_once '../model/header.php';
+              $header = new Header();
+              echo $header->get_html();
+            ?>
 
           <!-- Banner -->
           <section id="banner">
@@ -218,67 +186,9 @@
       </div>
 
       <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="post" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
-
-          <!-- Menu -->
-          <nav id="menu">
-            <header class="major">
-              <h2>Menu</h2>
-            </header>
-            <ul>
-              <li><a href="index.html">Homepage</a></li>
-              <li><a href="./view/elements.html">Elements</a></li>
-              <li>
-                <span class="opener">Topics</span>
-                <ul>
-                  <li><a href="./view/finance.html">Finance</a></li>
-                  <li><a href="./view/tech.htm">Tech</a></li>
-                  <li><a href="./view/lifestyle.htm">Lifestyle</a></li>
-                </ul>
-              </li>
-              <li><a href="./login/login.html">Log In</a></li>
-              <li><a href="./login/signup.html">Sign Up</a></li>
-            </ul>
-          </nav>
-
-          <!-- Section -->
-          <section>
-            <header class="major">
-              <h2>Get in touch</h2>
-            </header>
-            <p>
-              Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-              velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-              aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-              tempus aliquam.
-            </p>
-            <ul class="contact">
-              <li class="icon solid fa-envelope">
-                <a href="#">princess.asante@ashesi.edu.gh</a>
-              </li>
-              <li class="icon solid fa-phone">(000) 000-0000</li>
-              <li class="icon solid fa-home">
-                1234 Somewhere Road #8254<br />
-                Nashville, TN 00000-0000
-              </li>
-            </ul>
-          </section>
-
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">
-              &copy; ECommerce 2020 Group 2. All rights reserved.
-            </p>
-          </footer>
-        </div>
-      </div>
+      <?php require_once './model/menu.php';
+      $menu = new Menu();
+      echo $menu->get_html(); ?>
     </div>
 
     <!-- Scripts -->
