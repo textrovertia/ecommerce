@@ -11,26 +11,16 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
-      crossorigin="anonymous"
-    />
-
     <!-- Framework CSS -->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/login.css" />
 
+    <title>Login</title>
     <link
       rel="shortcut icon"
       href="../images/Logo Icon.ico"
       type="image/x-icon"
     />
-
-    <title>Sign Up</title>
   </head>
   <body>
     <div class="container-fluid text">
@@ -44,20 +34,13 @@
             <h2>Login</h2>
           </header>
           <form action="POST" method="post" id="login-form">
-            <!-- Email -->
-            <div class="form-item">
-              <label for="login"><h3>Email</h3></label>
-              <input class="input" id="email" name="email" />
-            </div>
-            <br />
-
             <!-- Username -->
             <div class="form-item">
               <label for="login"><h3>Username</h3></label>
               <input class="input" id="email" name="email" />
             </div>
-            <br />
 
+            <br />
             <!-- Password -->
             <div class="form-item">
               <label for="password"><h3>Password</h3></label>
@@ -68,27 +51,15 @@
                 name="password"
               />
             </div>
-            <br />
-
-            <!-- Repeat Password -->
-            <div class="form-item">
-              <label for="password"><h3>Repeat Password</h3></label>
-              <input
-                class="input"
-                id="password"
-                type="password"
-                name="password"
-              />
-            </div>
 
             <br />
             <br />
 
-            <input type="submit" value="Sign Up" />
+            <input type="submit" value="Login" />
           </form>
           <div class="p">
-            Already have an account? Log in
-            <span> <a href="./login.html">here</a> </span>
+            Don't have an account? Sign up
+            <span> <a href="./signup.php">here</a> </span>
           </div>
         </div>
       </div>

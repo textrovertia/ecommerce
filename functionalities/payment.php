@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +17,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/login.css" />
 
-    <title>Login</title>
+    <title>Subscription</title>
     <link
       rel="shortcut icon"
       href="../images/Logo Icon.ico"
@@ -23,47 +25,45 @@
     />
   </head>
   <body>
-    <div class="container-fluid text">
-      <div class="content row my-auto">
-        <div class="left-half col-md-6 mx-auto my-auto">
-          <img src="../images/Logo.png" alt="Logo" />
-        </div>
+      <br>
+      <br>
+    <header class="major" style="text-align: center;">
+        <h2>Student Friendly Packages!</h2>
+    </header>
+    <div class="float-container">
 
         <div class="right-half col-md-6 mx-auto my-auto">
-          <header class="major">
-            <h2>Login</h2>
-          </header>
           <form action="POST" method="post" id="login-form">
-            <!-- Email -->
-            <div class="form-item">
-              <label for="login"><h3>Email</h3></label>
-              <input class="input" id="email" name="email" />
+            <!-- Username -->
+            <div class="float-child">
+                Weekly 10GHC/week
+                <a href="../functionalities/payment.php">
+                <input type="button" value="Purchase" />
+                </a>
             </div>
 
-            <br />
-            <!-- Password -->
-            <div class="form-item">
-              <label for="password"><h3>Password</h3></label>
-              <input
-                class="input"
-                id="password"
-                type="password"
-                name="password"
-              />
+            <div class="float-child">
+                Weekly 10GHC/week
+                <a href="../functionalities/payment.php">
+                <input type="button" value="Purchase" />
+                </a>
             </div>
 
-            <br />
-            <br />
+            <div class="float-child">
+                Weekly 10GHC/week
+                <a href="../functionalities/payment.php">
+                <input type="button" value="Purchase" />
+                </a>
+            </div>
 
-            <input type="submit" value="Login" />
           </form>
-          <div class="p">
-            Don't have an account? Sign up
-            <span> <a href="./signup.html">here</a> </span>
-          </div>
+
         </div>
+        
       </div>
     </div>
+
+    
 
     <!-- Bootstrap -->
     <script
@@ -78,3 +78,8 @@
     ></script>
   </body>
 </html>
+
+
+<form>
+
+

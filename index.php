@@ -45,7 +45,7 @@
                 sit nullam.
               </p>
               <ul class="actions">
-                <li><a href="#" class="button big">Learn More</a></li>
+                <li><a href="login/signup.php" class="button big">Learn More</a></li>
               </ul>
             </div>
             <span class="image object">
@@ -70,7 +70,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -84,7 +84,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -98,7 +98,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -112,7 +112,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -135,7 +135,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -149,7 +149,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -163,7 +163,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
@@ -177,7 +177,7 @@
                   lorem feugiat tempus aliquam.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -186,9 +186,67 @@
       </div>
 
       <!-- Sidebar -->
-      <?php require_once './model/menu.php';
-      $menu = new Menu();
-      echo $menu->get_html(); ?>
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Search -->
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="./view/elements.html">Elements</a></li>
+              <li>
+                <span class="opener">Topics</span>
+                <ul>
+                  <li><a href="./view/finance.html">Finance</a></li>
+                  <li><a href="./view/tech.htm">Tech</a></li>
+                  <li><a href="./view/lifestyle.htm">Lifestyle</a></li>
+                </ul>
+              </li>
+              <li><a href="./login/login.php">Log In</a></li>
+              <li><a href="./login/../login/signup.php">Sign Up</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Get in touch</h2>
+            </header>
+            <p>
+              Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
+              velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
+              aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
+              tempus aliquam.
+            </p>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">princess.asante@ashesi.edu.gh</a>
+              </li>
+              <li class="icon solid fa-phone">(000) 000-0000</li>
+              <li class="icon solid fa-home">
+                1234 Somewhere Road #8254<br />
+                Nashville, TN 00000-0000
+              </li>
+            </ul>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; ECommerce 2020 Group 2. All rights reserved.
+            </p>
+          </footer>
+        </div>
+      </div>
     </div>
 
     <!-- Scripts -->
