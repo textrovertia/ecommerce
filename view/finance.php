@@ -39,8 +39,8 @@
             </header>
             <div class="posts">
               <?php
-                   require_once '../model/article.php';
-                   $header = new Article(
+                  require_once '../controllers/article_controller.php';
+                  echo create_new_article(
                      '#', 
                      '../images/girl_brown.jpg', 
                      'Pay Up!', 
@@ -48,69 +48,27 @@
                      dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
                      lorem feugiat tempus aliquam.',
                      './story.html'
-                    );
-                   echo $header->get_html();
+                    ); 
+                  
+                  echo create_new_article(
+                     '#', 
+                     '../images/girl_brown.jpg', 
+                     'Pay Up!', 
+                     'Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                     dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                     lorem feugiat tempus aliquam.',
+                     './story.html'
+                  );
+                  echo create_new_article(
+                    '#', 
+                    '../images/girl_brown.jpg', 
+                    'Pay Up!', 
+                    'Aenean ornare velit lacus, ac varius enim lorem ullamcorper
+                    dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
+                    lorem feugiat tempus aliquam.',
+                    './story.html'
+                 )
               ?>
-              <article>
-                <a href="#" class="image"
-                  ><img src="../images/girl_brown.jpg" alt=""
-                /></a>
-                <h3>Students refusing to pay student loans</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
-                <ul class="actions">
-                  <li><a href="./story.html" class="button">More</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="../images/plane.jpg" alt=""
-                /></a>
-                <h3>Air industry in trouble</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
-                <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="../images/pic03.jpg" alt=""
-                /></a>
-                <h3>Tempus ullamcorper</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
-                <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="../images/pic04.jpg" alt=""
-                /></a>
-                <h3>Sed etiam facilis</h3>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
-                </p>
-                <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
-                </ul>
-              </article>
-            </div>
-          </section>
-        </div>
-      </div>
 
       <!-- Sidebar -->
       <?php require_once '../model/menu.php';
