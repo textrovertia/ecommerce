@@ -128,7 +128,7 @@
       </div>
 
       <!-- Sidebar -->
-      <?php require_once '../model/menu.php';
+      <?php require_once '../classes/menu.php';
         $menu = new Menu('lifestyle');
         echo $menu->get_html();
       ?>

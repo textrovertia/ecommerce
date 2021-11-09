@@ -42,9 +42,9 @@
                         <li><a href="$view/lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
-                    <li><a href="$login/login.html">Log In</a></li>
-                    <li><a href="$login/signup.html">Sign Up</a></li>
-                    <li><a href="$view/elements.html">Elements</a></li>
+                    <li><a href="$login/login.php">Log In</a></li>
+                    <li><a href="$login/signup.php">Sign Up</a></li>
+                    <li><a href="$view/elements.php">Elements</a></li>
                     </ul>
                 </nav>
         

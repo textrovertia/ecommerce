@@ -27,8 +27,8 @@ class Customer extends Connection{
         return $this->fetch("select * from customer");
     }
 
-    function select_one_customer($id){
-        return $this->fetchOne("select * from customer where customer_id='$id'");
+    function select_one_customer($email){
+        return $this->fetchOne("select * from customer where customer_email='$email'");
     }
 }
 

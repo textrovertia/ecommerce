@@ -48,14 +48,14 @@
                 class="input"
                 id="password"
                 type="password"
-                name="password"
+                name="pass"
               />
             </div>
 
             <br />
             <br />
 
-            <input type="submit" value="Login" />
+            <input type="submit" value="Login" name='login' />
           </form>
           <div class="p">
             Don't have an account? Sign up

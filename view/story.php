@@ -22,7 +22,7 @@
         <div class="inner">
           <!-- Header -->
           <?php
-          require_once '../model/header.php';
+          require_once '../classes/header.php';
           $header = new Header();
           echo $header->get_html();
         ?>
@@ -164,7 +164,7 @@
       </div>
 
       <!-- Sidebar -->
-      <?php require_once '../model/menu.php';
+      <?php require_once '../classes/menu.php';
       $menu = new Menu('lifestyle');
       echo $menu->get_html(); ?>
     </div>
