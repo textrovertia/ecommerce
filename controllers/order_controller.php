@@ -22,5 +22,11 @@ function total_readers_controllers(){
     return $order_instance->total_readers(); 
 }
 
+function total_writers_controllers(){
+    $order_instance = new Order();
+    return $order_instance->total_writers(); 
+}
+
+
 
 ?>

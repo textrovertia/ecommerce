@@ -32,6 +32,10 @@ class Order extends Connection{
         return $this->query("select COUNT(customer_id) from customer where user_role=1");
     }
 
+    function total_writers(){
+        return $this->query("select COUNT(customer_id) from customer where user_role=2");
+    }
+
 
 }
 

@@ -260,7 +260,7 @@
                   <div class="card-body">
                   <h5>Total Writers:</h5>
                     <span style='font-size: 3rem'>
-                    <?php echo total_readers_controllers() ?>
+                    <?php echo total_writers_controllers() ?>
                   </span>
                   </div>
                 
