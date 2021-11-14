@@ -24,6 +24,14 @@ class Order extends Connection{
         return $this->fetchOne("select * from orders where order_id='$order_id'");
     }
 
+    function select_one_customer($c_id){
+        return $this->fetchOne("select * from customer where customer_id='$c_id'");
+    }
+
+    function total_readers(){
+        return $this->query("select COUNT(customer_id) from customer where user_role=1");
+    }
+
 
 }
 
