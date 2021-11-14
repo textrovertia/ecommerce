@@ -70,6 +70,17 @@
             </div>
             <br />
 
+             <!-- Account Type -->
+             <div class="form-item">
+              <label for="account-type"><h3>Account Type</h3></label>
+              <select name="account-type" class='input' id="account-type">
+                <option value="1">Reader</option>
+                <option value="2">Writer</option>
+              </select>
+            </div>
+            <br />
+
+
             <!-- Password -->
             <div class="form-item">
               <label for="password"><h3>Password</h3></label>

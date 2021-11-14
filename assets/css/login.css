@@ -13,3 +13,7 @@
 span{
     color: #f56a6a;
 }
+
+select{
+    border-bottom: 2em;
+}
