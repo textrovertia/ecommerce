@@ -18,7 +18,7 @@ if(isset($_POST['signupButton'])){
     }else{
 
         //call the add customer controller
-        $result = add_customer_controller($username, $email, $password, $class, $number, $user_role);
+        $result = add_customer_controller($username, $email, $password, $class, $number, 3);
 
         if($result) {
             header("Location: ../functionalities/payment.php");

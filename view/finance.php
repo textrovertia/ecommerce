@@ -1,3 +1,9 @@
+  <!-- Sidebar -->
+  <?php 
+      require_once '../controllers/menu_controller.php';
+      echo create_menu('finance')
+      
+?>
 <!DOCTYPE html>
 <!--
 	Editorial by HTML5 UP
@@ -70,10 +76,7 @@
                  )
               ?>
 
-      <!-- Sidebar -->
-      <?php require_once '../classes/menu.php';
-      $menu = new Menu('lifestyle');
-      echo $menu->get_html(); ?>
+    
     </div>
 
     <!-- Scripts -->

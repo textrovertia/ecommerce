@@ -8,7 +8,6 @@
     
         $data = select_one_customer_controller($email);
         if (!$data){
-            print('hi');
             $_SESSION['email_password_set'] = true; 
             echo 'email does not exist';
             // header('Location: ./login.php');

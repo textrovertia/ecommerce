@@ -1,5 +1,9 @@
 <?php
-  
+  require '../settings/core.php';
+  check_login();
+  if( check_permission() != 3){
+      header('Location: ../index.php');
+  }
 ?>
 
 <!DOCTYPE html>

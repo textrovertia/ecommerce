@@ -1,3 +1,8 @@
+  <!-- Sidebar -->
+  <?php require_once './classes/menu.php';
+      $menu = new Menu('index');
+      echo $menu->get_html(); ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -185,10 +190,7 @@
         </div>
       </div>
 
-      <!-- Sidebar -->
-      <?php require_once './classes/menu.php';
-      $menu = new Menu('index');
-      echo $menu->get_html(); ?>
+    
     </div>
     </div>
 

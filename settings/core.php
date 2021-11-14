@@ -1,7 +1,6 @@
 <?php
 //for header redirection
 ob_start();
-
 //start session
 session_start(); 
 
@@ -38,5 +37,33 @@ function check_email($message){
 	}else{
 		unset($_SESSION['email']);
 	}
+}
+
+// Check login menu
+function login_menu($loginpath, $logoutpath){
+	if(isset($_SESSION['customer_id'])){
+		return "
+			<li class='nav-item'>
+			<a class='nav-link' href='$logoutpath'>Logout</a>
+			</li>         
+			";
+		}else{
+			return "
+			<li class='nav-item'>
+			<a class='nav-link active' href='$loginpath'>Login</a>
+			</li>         
+			";
+		}
+}
+
+function admin_page($admin_path){
+	if (check_permission() == 3){
+		return "
+			<li class='nav-item'>
+			<a class='nav-link' href='${admin_path}/admin.php'>Admin</a>
+			</li>         
+			";
+	}
+	return; 
 }
 
