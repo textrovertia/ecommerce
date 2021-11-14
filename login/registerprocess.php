@@ -1,4 +1,5 @@
 <?php
+require '../settings/core.php';
 require('../controllers/customer_controller.php');
 
 if(isset($_POST['signupButton'])){
@@ -12,7 +13,7 @@ if(isset($_POST['signupButton'])){
 
     // Check if email already exists 
     if(select_one_customer_controller($email)){
-        $_SESSION['email_exists'] = 'Email already exists'; 
+        // $_SESSION['email_exists'] = 'Email already exists'; 
         header('Location: ./signup.php');
     }else{
 

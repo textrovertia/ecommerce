@@ -27,9 +27,16 @@ function check_permission(){
 	}
 }
 
-function get_article(){
-    
+function check_email($message){
+	if(isset($_SESSION['email'])){
+		echo "
+		<script>
+		alert('$message'); 
+		console.log('email error')
+		</script>";
+		unset($_SESSION['email']);
+	}else{
+		unset($_SESSION['email']);
+	}
 }
 
-
-?>

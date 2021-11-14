@@ -132,3 +132,10 @@
     ></script>
   </body>
 </html>
+
+<?php
+    // require '../settings/core.php';
+   // check_email("This email already exists");
+  
+?>
+
