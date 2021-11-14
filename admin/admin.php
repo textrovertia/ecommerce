@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -344,25 +348,27 @@
                 <table id="datatablesSimple">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Order ID</th>
+                      <th>Customer</th>
+                      <th>Invoice</th>
+                      <th>Order Date</th>
+                      <th>Order Status</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                    <th>Order ID</th>
+                      <th>Customer</th>
+                      <th>Invoice</th>
+                      <th>Order Date</th>
+                      <th>Order Status</th>
+            
                     </tr>
                   </tfoot>
                   <tbody>
+                    <?php
+                      
+                    ?>
                     <tr>
                       <td>Tiger Nixon</td>
                       <td>System Architect</td>
