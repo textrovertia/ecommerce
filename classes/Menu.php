@@ -6,6 +6,22 @@
             $this->page = $page;
         }
 
+        function login_menu($loginpath, $logoutpath){
+            if(isset($_SESSION['customer_id'])){
+                return "
+                    <li class='nav-item'>
+                    <a class='nav-link' href='$logoutpath'>Logout</a>
+                    </li>         
+                    ";
+                }else{
+                    return "
+                    <li class='nav-item'>
+                    <a class='nav-link active' href='$loginpath'>Login</a>
+                    </li>         
+                    ";
+                }
+        }
+
         function get_html(){
             if ($this->page == 'index'){
                 $view = './view';
@@ -17,7 +33,9 @@
                 $index = '..';
                 $login = '../login';
             }
-            return <<<__MENU
+
+            $login_menu = $this->login_menu(`$login/login.php`, `$login/logout.php`);
+            echo <<<__MENU
                 <div id="sidebar">
                 <div class="inner">
                 <!-- Search -->
@@ -42,6 +60,8 @@
                         <li><a href="$view/lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
+                  
+                    $login_menu
                     <li><a href="$login/login.php">Log In</a></li>
                     <li><a href="$login/signup.php">Sign Up</a></li>
                     <li><a href="$view/elements.php">Elements</a></li>
@@ -83,7 +103,11 @@
             </div>
 
             __MENU;
+    
         }
+
+      
+    
     }
 
 ?>
