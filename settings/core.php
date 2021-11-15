@@ -40,7 +40,7 @@ function check_email($message){
 }
 
 // Check login menu
-function login_menu($loginpath, $logoutpath){
+function login_menu($loginpath, $logoutpath, $signuppath){
 	if(isset($_SESSION['customer_id'])){
 		return "
 			<li class='nav-item'>
@@ -51,7 +51,11 @@ function login_menu($loginpath, $logoutpath){
 			return "
 			<li class='nav-item'>
 			<a class='nav-link active' href='$loginpath'>Login</a>
-			</li>         
+			</li> 
+			
+			<li class='nav-item'>
+			<a class='nav-link active' href='$signuppath'>Sign Up</a>
+			</li>  
 			";
 		}
 }
