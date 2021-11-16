@@ -59,6 +59,7 @@
               <div class="col-md-4 col-sm-12">
                 <div class="card bg-success text-white mb-4">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
                   <div class="card-body">Success Card</div>
                   <div
@@ -73,10 +74,15 @@
                       >View Details</a
                     >
 =======
+=======
+>>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
                 <img class="card-img-top" src="../images/building.jpg" alt="Card image cap">
                   <div class="card-body">Weekly <br>10GHC/week</div>
                   <div class="card-footer d-flex align-items-center justify-content-between"5>
 
+<<<<<<< HEAD
+>>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
+=======
 >>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
                     <div class="small text-white">
                       <i class="fas fa-angle-right"></i>
@@ -118,7 +124,10 @@
     
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
 <form method="post" action="../view/cart.php">
   <div class="row gtr-uniform">
     <div class="col-6 col-12-xsmall">
