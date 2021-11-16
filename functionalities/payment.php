@@ -58,6 +58,7 @@
 
               <div class="col-md-4 col-sm-12">
                 <div class="card bg-success text-white mb-4">
+<<<<<<< HEAD
                 
                   <div class="card-body">Success Card</div>
                   <div
@@ -71,11 +72,18 @@
                     <a class="small text-white stretched-link" href="#"
                       >View Details</a
                     >
+=======
+                <img class="card-img-top" src="../images/building.jpg" alt="Card image cap">
+                  <div class="card-body">Weekly <br>10GHC/week</div>
+                  <div class="card-footer d-flex align-items-center justify-content-between"5>
+
+>>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
                     <div class="small text-white">
                       <i class="fas fa-angle-right"></i>
                     </div>
                   </div>
                 </div>
+                
               </div>
 
               <div class="col-md-4 col-sm-12">
@@ -109,6 +117,44 @@
 
     
 
+<<<<<<< HEAD
+=======
+<form method="post" action="../view/cart.php">
+  <div class="row gtr-uniform">
+    <div class="col-6 col-12-xsmall">
+      <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+    </div>
+    <div class="col-6 col-12-xsmall">
+      <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+    </div>
+    <!-- Break -->
+    <div class="col-12">
+      <select name="demo-category" id="demo-category">
+        <option value="">- Category -</option>
+        <option value="1">Weekly</option>
+        <option value="2">Monthly</option>
+        <option value="3">Yearly</option>
+      </select>
+    </div>
+    <!-- Break -->
+    <div class="col-6 col-12-small">
+      <input type="checkbox" id="demo-copy" name="demo-copy">
+      <label for="demo-copy">Email me a copy</label>
+    </div>
+    <div class="col-6 col-12-small">
+      <input type="checkbox" id="demo-human" name="demo-human" checked>
+      <label for="demo-human">I am a human</label>
+    </div>
+    <!-- Break -->
+    <div class="col-12">
+      <ul class="actions">
+        <li><input type="submit" value="Subscribe" class="primary" /></li>
+        <li><input type="reset" value="Reset" /></li>
+      </ul>
+    </div>
+  </div>
+</form>
+>>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
 
     
       </div>
