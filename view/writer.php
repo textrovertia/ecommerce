@@ -16,8 +16,8 @@
 
     $user_id = $_SESSION['customer_id'];
    
-    $articles = var_dump(select_writers_articles_controller($user_id));
-    var_dump($articles)
+    $articles = select_writers_articles_controller($user_id);
+   
       
 ?>
 <!DOCTYPE html>
@@ -61,7 +61,27 @@
             </header>
             <div class="posts">
               <?php
+                foreach($articles as $article){
+              ?> 
+                  <article>
+                    <a href="$imagehref" class="image"
+                    ><img src="../images/<?php echo $article['article_image'] ?>" alt="Article image"
+                    /></a>
+                    <h3>
+                    <?php echo $article['article_title'] ?>
+                    </h3>
+                    <p>
+                    <?php echo $article['article_text'] ?>
+                    </p>
+                    <ul class="actions">
+                    <li><a href="$buttonlink" class="button primary">Edit</a></li>
+                    <li><a href="$buttonlink" class="button">Delete</a></li>
+                    </ul>
+                </article>     
+                <?php    
+                }
                 //  foreach item in articles, where the writer 
+                                
                                 ?>
     
     </div> 
@@ -84,7 +104,7 @@
                     <li><a href="../index.php">Home</a></li>
                     <li>
                         <span class="opener">Topics</span>
-                        <ul>
+                        <ul> 
                         <li><a href="../view/finance.php">Finance</a></li>
                         <li><a href="../view/tech.php">Tech</a></li>
                         <li><a href="../view/lifestyle.php">Lifestyle</a></li>

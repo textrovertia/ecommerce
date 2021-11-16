@@ -71,3 +71,6 @@ function admin_page($admin_path){
 	return; 
 }
 
+function writer_page($writer_path){
+	if (check_permission() != 2 && check_permission() != 3 ){}
+}
