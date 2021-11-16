@@ -72,5 +72,11 @@ function admin_page($admin_path){
 }
 
 function writer_page($writer_path){
-	if (check_permission() != 2 && check_permission() != 3 ){}
+	if (check_permission() == 2 || check_permission() == 3 ){
+		return  "
+		<li class='nav-item'>
+		<a class='nav-link' href='${writer_path}'>Writer's Corner</a>
+		</li>         
+		";
+	}
 }
