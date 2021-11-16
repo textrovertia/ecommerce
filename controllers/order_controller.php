@@ -27,6 +27,14 @@ function total_writers_controllers(){
     return $order_instance->total_writers(); 
 }
 
+function add_article_controller($article_title, $article_image, $category, $writer_id){
+    $article = new Order();
+    $article->add_article($article_title, $article_image, $category, $writer_id);
+}
 
+function select_all_articles_controller(){
+    $article = new Order(); 
+    return $article->select_all_articles();
+}
 
 ?>

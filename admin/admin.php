@@ -6,9 +6,9 @@
       header('Location: ../index.php');   
   }
   $orders = select_all_orders_controller();
+  $articles = select_all_articles_controller();
 
 
-  
   
 ?>
 
@@ -224,6 +224,7 @@
           <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
               <?php echo select_one_customer_controller($_SESSION['customer_id'])['customer_name'] ?>
+              
           </div>
         </nav>
       </div>
@@ -249,7 +250,10 @@
                   <div class="card-body">
                   <h5>Total Writers:</h5>
                     <span style='font-size: 3rem'>
-                    <?php echo total_writers_controllers() ?>
+                    <?php echo total_writers_controllers();
+                      
+                        
+                    ?>
                   </span>
                   </div>
                 
@@ -382,10 +386,15 @@
             <hr>
             <div class="row">
               
-              <div class="col-xl-3 col-sm-6">
+              <?php  
+                foreach($articles as $article){
+                ?>
+                <div class="col-xl-3 col-sm-6">
                 <div class="card bg-success text-white mb-4">
-                <img class="card-img-top" src="../images/building.jpg" alt="Card image cap">
-                  <div class="card-body">Success Card</div>
+                <img class="card-img-top" src="../images/<?php echo $article['article_image'] ?>" alt="Card image cap">
+                  <div class="card-body">
+                  <h5 class="card-title"><?php echo $article['article_title'] ?></h5>
+                  </div>
                   <div
                     class="
                       card-footer
@@ -403,6 +412,9 @@
                   </div>
                 </div>
               </div>
+              <?php
+                }
+              ?>
               <div class="col-xl-3 col-sm-6">
                 <div class="card bg-danger text-white mb-4">
                   <div class="card-body">Danger Card</div>

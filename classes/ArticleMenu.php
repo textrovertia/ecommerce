@@ -1,5 +1,5 @@
 <?php
-    class Article{
+    class ArticleMenu{
         public $imagehref;
         public $image;
         public $heading;

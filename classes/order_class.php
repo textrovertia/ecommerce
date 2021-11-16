@@ -36,6 +36,22 @@ class Order extends Connection{
         return $this->query("select COUNT(customer_id) from customer where user_role='2'");
     }
 
+    function add_article($article_title, $article_image, $category, $writer_id){
+        return $this->query("insert into article(article_title, article_image, category, writer_id) values
+        ('$article_title', '$article_image', '$category', '$writer_id')");
+    }
+
+    function delete_article($id){
+        return $this->query("delete from article where article_id = '$id'");
+    }
+
+    function select_all_articles(){
+        return $this->fetch("select * from article");
+    }
+
+    function select_one_article($id){
+        return $this->fetchOne("select * from article where article_id='$id'");
+    }
 
 }
 

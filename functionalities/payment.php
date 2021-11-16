@@ -86,8 +86,6 @@
 
     
 
-<<<<<<< HEAD
-=======
 <form method="post" action="../view/cart.php">
   <div class="row gtr-uniform">
     <div class="col-6 col-12-xsmall">
@@ -123,7 +121,6 @@
     </div>
   </div>
 </form>
->>>>>>> cbececf6e6faf27b6ba9939a01f0d743af248577
 
     
       </div>
