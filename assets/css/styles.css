@@ -11699,3 +11699,8 @@ body {
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
 }
+
+
+@media screen and (max-width: 1680px) {
+  h1 {
+    font-size: 3.5em; } }

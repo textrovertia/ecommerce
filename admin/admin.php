@@ -21,9 +21,19 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="../assets/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+        <style>
+          h3{
+            font-family: "Roboto Slab", serif;
+
+          }
+        </style>
     </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -235,7 +245,7 @@
             <hr>
             <div class="row">
               <div class="col-xl-3 col-md-6">
-                <div class="card bg-primary text-white mb-4">
+                <div class="card text-white mb-4"  style='background-color:#f56a6a'>
                   <div class="card-body">
                   <h5>Total Readers:</h5>
                     <span style='font-size: 3rem'>
@@ -246,7 +256,7 @@
                 </div>
               </div>
               <div class="col-xl-3 col-md-6">
-                <div class="card bg-primary text-white mb-4">
+                <div class="card text-white mb-4"  style='background-color:#f56a6a'>
                   <div class="card-body">
                   <h5>Total Writers:</h5>
                     <span style='font-size: 3rem'>
@@ -259,46 +269,7 @@
                 
                 </div>
               </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-success text-white mb-4">
-                  <div class="card-body">Success Card</div>
-                  <div
-                    class="
-                      card-footer
-                      d-flex
-                      align-items-center
-                      justify-content-between
-                    "
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-md-6">
-                <div class="card bg-danger text-white mb-4">
-                  <div class="card-body">Danger Card</div>
-                  <div
-                    class="
-                      card-footer
-                      d-flex
-                      align-items-center
-                      justify-content-between
-                    "
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
 
             <h3 class='mt-4'>Graphs</h3>
@@ -389,11 +360,14 @@
               <?php  
                 foreach($articles as $article){
                 ?>
-                <div class="col-xl-3 col-sm-6">
-                <div class="card bg-success text-white mb-4">
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="card text-white mb-4" style='background-color:#f56a6a'>
                 <img class="card-img-top" src="../images/<?php echo $article['article_image'] ?>" alt="Card image cap">
                   <div class="card-body">
                   <h5 class="card-title"><?php echo $article['article_title'] ?></h5>
+                  <p>
+                  <?php echo $article['article_text'] ?>
+                  </p>
                   </div>
                   <div
                     class="
