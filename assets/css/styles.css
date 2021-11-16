@@ -11700,7 +11700,11 @@ body {
   border-radius: 0.25rem !important;
 }
 
-
+#btnNavbarSearch{
+  background: #eff1f2 !important
+}
 @media screen and (max-width: 1680px) {
   h1 {
     font-size: 3.5em; } }
+
+

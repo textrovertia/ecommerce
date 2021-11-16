@@ -6,10 +6,7 @@
       header('Location: ../index.php');   
   }
   $orders = select_all_orders_controller();
-  $articles = select_all_articles_controller();
-
-
-  
+  $articles = select_all_articles_controller();  
 ?>
 
 <!DOCTYPE html>
@@ -24,21 +21,37 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="../assets/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
         <style>
-          h3{
+          body{
+            font-family: "Poppins";
+            
+          }
+          header.major > :last-child{
             font-family: "Roboto Slab", serif;
+            border-bottom: solid 3px #f56a6a;
+            display: inline-block;
+            margin: 0 0 0.7em 0;
+            padding: 0 0.75em 0.5em 0; 
+          }
 
+          .navbar-brand{
+            font-family: "Roboto Slab", serif;
+          }
+
+          .article-text{
+            font-size: 0.7rem;
           }
         </style>
     </head>
   <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
       <!-- Navbar Brand-->
-      <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand ps-3" href="#">Kaseɛbo</a>
       <!-- Sidebar Toggle-->
       <button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -61,11 +74,11 @@
           <input
             class="form-control"
             type="text"
-            placeholder="Search for..."
+            placeholder="Search"
             aria-label="Search for..."
             aria-describedby="btnNavbarSearch"
           />
-          <button class="btn btn-primary" id="btnNavbarSearch" type="button">
+          <button class="btn" id="btnNavbarSearch" type="button" style='background: #eff1f2'>
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -94,7 +107,7 @@
     </nav>
     <div id="layoutSidenav">
       <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
           <div class="sb-sidenav-menu">
             <div class="nav">
               <div class="sb-sidenav-menu-heading">Core</div>
@@ -241,8 +254,10 @@
       <div id="layoutSidenav_content">
         <main>
           <div class="container-fluid px-4">
-            <h3 class='mt-4'>User Counter</h3>
-            <hr>
+          <header class="major">
+              <h3 class='mt-4'>Users</h3>
+            </header> 
+        
             <div class="row">
               <div class="col-xl-3 col-md-6">
                 <div class="card text-white mb-4"  style='background-color:#f56a6a'>
@@ -272,8 +287,10 @@
              
             </div>
 
-            <h3 class='mt-4'>Graphs</h3>
-            <hr>
+            <header class="major">
+              <h3>Graphs</h3>
+            </header>
+            
             <div class="row">
               <div class="col-xl-6">
                 <div class="card mb-4">
@@ -300,8 +317,10 @@
             </div>
 
             <!-- Table -->
-            <h3 class='mt-4'>Orders</h3>
-            <hr>
+            <header class="major">
+              <h3>Orders</h3>
+            </header>
+        
             <div class="card mb-4">
               <div class="card-header">
                 <i class="fas fa-table me-1"></i>
@@ -340,7 +359,8 @@
                       <td><?php echo $order['invoice_no'] ?></td>
                       <td><?php echo $order['order_date'] ?></td>
                       <td><?php echo $order['order_status'] ?></td>
-                      
+                      <td> <i class="fas fa-edit "></i></td>
+                      <td>  <i class="fas fa-trash-alt "></i></td>
                     </tr>
 
                      <?php 
@@ -353,8 +373,9 @@
             </div>
 
             <!-- Articles -->
-            <h3 class='mt-4'>Articles</h3>
-            <hr>
+            <header class="major">
+              <h3>Articles</h3>
+            </header>
             <div class="row">
               
               <?php  
@@ -365,24 +386,21 @@
                 <img class="card-img-top" src="../images/<?php echo $article['article_image'] ?>" alt="Card image cap">
                   <div class="card-body">
                   <h5 class="card-title"><?php echo $article['article_title'] ?></h5>
-                  <p>
+                  <p class='article-text'>
                   <?php echo $article['article_text'] ?>
                   </p>
                   </div>
                   <div
                     class="
                       card-footer
-                      d-flex
+                     d-flex
                       align-items-center
-                      justify-content-between
+                      justify-content-around
                     "
                   >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
+                  <i class="fas fa-edit "></i>
+                  <i class="fas fa-trash-alt "></i>
+                  
                   </div>
                 </div>
               </div>

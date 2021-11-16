@@ -8,7 +8,7 @@
             return <<<__HEADER
                 <header id="header">
                 <a href="../index.html" class="logo"
-                ><strong>Editorial</strong> by HTML5 UP</a
+                ><strong>Kaseɛbo</strong> by HTML5 UP</a
                 >
                 <ul class="icons">
                 <li>
