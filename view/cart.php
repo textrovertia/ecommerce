@@ -1,5 +1,5 @@
 <?php
-include('../Controllers/cart_controller.php');
+include('../controllers/cart_controller.php');
 // include('../Login/core.php');
 session_start();
 $id = $_SESSION['user_id'];
