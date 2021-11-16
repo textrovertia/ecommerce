@@ -30,7 +30,7 @@
         <div class="inner">
           <!-- Header -->
           <?php
-              require_once './classes/header.php';
+              require_once './classes/Header.php';
               $header = new Header();
               echo $header->get_html();
             ?>
