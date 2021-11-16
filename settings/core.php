@@ -64,7 +64,7 @@ function admin_page($admin_path){
 	if (check_permission() == 3){
 		return "
 			<li class='nav-item'>
-			<a class='nav-link' href='${admin_path}/admin.php'>Admin</a>
+			<a class='nav-link' href='${admin_path}'>Admin</a>
 			</li>         
 			";
 	}

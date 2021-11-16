@@ -1,7 +1,7 @@
   <!-- Sidebar -->
   <?php require_once './settings/core.php';
       $login_menu = login_menu('./login/login.php', './login/logout.php', '../login/signup.php');
-      $admin_menu = admin_page('/.admin/admin.php')
+      $admin_menu = admin_page('./admin/admin.php')
     ?>
 
 <!DOCTYPE html>
