@@ -42,6 +42,15 @@
       href="../images/Logo Icon.ico"
       type="image/x-icon"
     />
+
+    <style>
+        .button-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -85,7 +94,76 @@
                                 
                                 ?>
     
-    </div> 
+             </div> 
+             <br>
+                <hr>
+             <br>
+
+             <!-- Add New Article -->
+             <section id="new-article">
+             <header class="major">
+              <h2>Add New Article</h2>
+            </header>
+                <form action="../actions/add_article.php" method="post">
+                    <!-- Article Title -->
+                    <div class="row gtr-uniform">
+                    <div class="col-6 col-12-xsmall">
+                      <input
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Name"
+                      />
+                    </div>
+                    
+                    <!-- Category -->
+                    <div class="col-6 col-12-xsmall">
+                      <select name="demo-category" id="demo-category" required>
+                        <option disabled selected>- Category -</option>
+                        <option value="finance">Finance</option>
+                        <option value="lifestyle">Shipping</option>
+                        <option value="tech">Administration</option>
+                        <option value="1">Human Resources</option>
+                      </select>
+                    </div>
+
+                    
+                    <!-- Article Text -->
+                    <div class="col-12">
+                      <textarea
+                        name="text"
+                        id="text"
+                        placeholder="Enter your article"
+                        rows="6"
+                      ></textarea>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-6 col-12-xsmall">
+                        <input
+                            type="file"
+                            name='image'
+                            id='article_image'
+                        />
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="col-12">
+                          <input
+                            type="submit"
+                            value="Submit Article"
+                            class="primary"
+                            name='submitArticle'
+                          />
+                    </div>
+                  </div>
+
+            </form>
+            </section>
+
+            
+            
+    
 
     <div id="sidebar">
                 <div class="inner">
