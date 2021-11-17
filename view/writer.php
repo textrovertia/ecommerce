@@ -74,8 +74,8 @@
                 foreach($articles as $article){
               ?> 
                   <article>
-                    <a href="$imagehref" class="image"
-                    ><img src="../images/<?php echo $article['article_image'] ?>" alt="Article image"
+                    <a href="" class="image"
+                    ><img src="../images/article_images/<?php echo $article['article_image'] ?>" alt="Article image"
                     /></a>
                     <h3>
                     <?php echo $article['article_title'] ?>
@@ -104,7 +104,7 @@
              <header class="major">
               <h2>Add New Article</h2>
             </header>
-                <form action="../actions/add_article.php" method="post">
+                <form action="../actions/add_article.php" method="post" >
                     <!-- Article Title -->
                     <div class="row gtr-uniform">
                     <div class="col-6 col-12-xsmall">
@@ -112,18 +112,18 @@
                         type="text"
                         name="title"
                         id="title"
-                        placeholder="Name"
+                        placeholder="Article Title"
                       />
                     </div>
                     
                     <!-- Category -->
                     <div class="col-6 col-12-xsmall">
-                      <select name="demo-category" id="demo-category" required>
+                      <select name="category" id="category" required>
                         <option disabled selected>- Category -</option>
                         <option value="finance">Finance</option>
-                        <option value="lifestyle">Shipping</option>
-                        <option value="tech">Administration</option>
-                        <option value="1">Human Resources</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="technology">Technology</option>
+                        
                       </select>
                     </div>
 
@@ -133,18 +133,14 @@
                       <textarea
                         name="text"
                         id="text"
-                        placeholder="Enter your article"
+                        placeholder="Enter your article body"
                         rows="6"
                       ></textarea>
                     </div>
 
                     <!-- Image -->
-                    <div class="col-6 col-12-xsmall">
-                        <input
-                            type="file"
-                            name='image'
-                            id='article_image'
-                        />
+                    <div class="">
+                    <input name='image' type="file" accept="image/png, image/gif, image/jpeg" required>
                     </div>
 
                     <!-- Submit -->

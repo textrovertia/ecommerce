@@ -383,7 +383,7 @@
                 ?>
                 <div class="col-xl-3 col-md-4 col-sm-6">
                 <div class="card text-white mb-4" style='background-color:#f56a6a'>
-                <img class="card-img-top" src="../images/<?php echo $article['article_image'] ?>" alt="Card image cap">
+                <img class="card-img-top" src="../images/article_images/<?php echo $article['article_image'] ?>" alt="Card image cap">
                   <div class="card-body">
                   <h5 class="card-title"><?php echo $article['article_title'] ?></h5>
                   <p class='article-text'>
@@ -407,26 +407,7 @@
               <?php
                 }
               ?>
-              <div class="col-xl-3 col-sm-6">
-                <div class="card bg-danger text-white mb-4">
-                  <div class="card-body">Danger Card</div>
-                  <div
-                    class="
-                      card-footer
-                      d-flex
-                      align-items-center
-                      justify-content-between
-                    "
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
            
           </div>

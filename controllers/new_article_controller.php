@@ -1,9 +1,9 @@
 <?php
 require_once '../classes/new_article_class.php';
 
-function add_article_controller($article_title, $article_image, $category, $writer_id){
+function add_article_controller($article_title, $article_image, $category, $writer_id, $article_text){
     $article = new NewArticle();
-    return $article->add_article($article_title, $article_image, $category, $writer_id);
+    return $article->add_article($article_title, $article_image, $category, $writer_id, $article_text);
 }
 
 function select_all_articles_controller(){
