@@ -91,13 +91,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/building.jpg" alt=""
+                  ><img src="images/article_images/house.jpg" alt=""
                 /></a>
-                <h3>Tempus ullamcorper</h3>
+                <h3>House, Mostly Along Party Lines, Censures Gosar for Violent Video</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                The Arizona Republican is the first member of the House to be formally rebuked in more than a decade. He was also removed from two committees.
+
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -105,13 +104,14 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic04.jpg" alt=""
+                  ><img src="images/article_images/leather.jpg" alt=""
                 /></a>
-                <h3>Sed etiam facilis</h3>
+                <h3>
+                  How Americans’ Appetite for Leather in Luxury SUVs Worsens Amazon Deforestation
+                </h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                  An examination of Brazil’s immense tannery industry shows how hides from illegally deforested ranches can easily reach the global marketplace. 
+                  In the United States, much of the demand for Brazilian leather comes from automakers.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -128,13 +128,12 @@
             <div class="posts">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/girl_brown.jpg" alt=""
+                  ><img src="images/article_images/ken.jpg" alt=""
                 /></a>
-                <h3>Students refusing to pay student loans</h3>
+                <h3>Ghanaian Finance Minister Targets Lower Budget Deficit</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                Ghana’s finance minister laid out plans to slash the budget deficit, 
+                boost economic growth and make the nation’s public finances more sustainable to regain investor confidence.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
