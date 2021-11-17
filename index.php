@@ -141,13 +141,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/plane.jpg" alt=""
+                  ><img src="images/article_images/ecowas.png" alt=""
                 /></a>
-                <h3>Air industry in trouble</h3>
+                <h3>ECOWAS Finance Ministers deliberate on Community Levy</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                With the exception of Mali and Guinea which did not have any representative at the meeting due to their suspension from the regional body over military coup d'etat,
+                 the meeting was attended by the rest of the ECOWAS countries, as well as Directors-General of Customs agencies from 13 of the 15 member states.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -155,13 +154,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic03.jpg" alt=""
+                  ><img src="images/article_images/aa.jpg" alt=""
                 /></a>
-                <h3>Tempus ullamcorper</h3>
+                <h3>Remittance from UK to Ghana to experience a boost as Lemonade Finance launches in Ghana</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                Lemonade Finance, a cross-border app which allows Africans in the diaspora to send and receive money from their home country,
+                 is now available to Ghanaians in the U.K.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -169,13 +167,13 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic04.jpg" alt=""
+                  ><img src="images/article_images/cocoa.jpg" alt=""
                 /></a>
-                <h3>Sed etiam facilis</h3>
+                <h3>ADB win best cocoa financing institution at Ghana Cocoa Awards</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                The Agricultural Development Bank Limited (ADB) has been adjudged the best Cocoa Financing Institution of the year at the Ghana Cocoa Awards (GCA).
+
+                The award was in recognition of the bank’s contribution towards providing Licensed Buying Companies (LBCs)and local farmers with the needed financial assistance to purchase cocoa and taking banking closer to cocoa farmers in the country.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
