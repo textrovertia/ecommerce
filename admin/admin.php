@@ -111,13 +111,13 @@
           <div class="sb-sidenav-menu">
             <div class="nav">
               <div class="sb-sidenav-menu-heading">Core</div>
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="#">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
-                Summary
+                Users
               </a>
-              <div class="sb-sidenav-menu-heading">Interface</div>
+              <div class="sb-sidenav-menu-heading">Writer Information</div>
               <a
                 class="nav-link collapsed"
                 href="#"
@@ -129,7 +129,7 @@
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-columns"></i>
                 </div>
-                Layouts
+                Graphs
                 <div class="sb-sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
                 </div>
@@ -160,7 +160,7 @@
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-book-open"></i>
                 </div>
-                Pages
+                Articles
                 <div class="sb-sidenav-collapse-arrow">
                   <i class="fas fa-angle-down"></i>
                 </div>
@@ -296,10 +296,10 @@
                 <div class="card mb-4">
                   <div class="card-header">
                     <i class="fas fa-chart-area me-1"></i>
-                    Area Chart Example
+                    Most Popular Categories (by Articles Written)
                   </div>
                   <div class="card-body">
-                    <canvas id="myAreaChart" width="100%" height="40"></canvas>
+                    <canvas id="myPieChart" width="100%" height="40"></canvas>
                   </div>
                 </div>
               </div>
@@ -459,7 +459,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/chart-area-demo.js"></script>
+    <script src="../assets/js/chart-pie-demo.js"></script>
 
     <script src="../assets/js/chart-bar-demo.js"></script>
     <script

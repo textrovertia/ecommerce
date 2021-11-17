@@ -13,6 +13,7 @@
     //   require_once '../controllers/';
     $login_menu = login_menu('../login/login.php', '../login/logout.php', '../login/signup.php');
     $admin_menu = admin_page('../admin/admin.php');
+    $writer_page = writer_page('./writer.php');
 
     $user_id = $_SESSION['customer_id'];
    
@@ -115,6 +116,7 @@
   
                     <li><a href="../view/elements.php">Elements</a></li>
                     <?php echo $admin_menu ?>
+                    <?php echo $writer_page ?>
                     </ul>
                 </nav>
         
