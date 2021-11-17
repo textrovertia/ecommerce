@@ -29,11 +29,11 @@ class Order extends Connection{
     }
 
     function total_readers(){
-        return $this->query("select COUNT(customer_id) from customer where user_role=1");
+        return $this->fetchOne("SELECT COUNT(*) as readers from customer where user_role=1");
     }
 
     function total_writers(){
-        return $this->query("select COUNT(customer_id) from customer where user_role='2'");
+        return $this->fetchOne("SELECT COUNT(*) as writers from customer where user_role=2");
     }
 
     function delete_article($id){
@@ -48,7 +48,10 @@ class Order extends Connection{
         return $this->fetchOne("select * from article where article_id='$id'");
     }
 
-}
+    function total_articles_on_topic($topic){
+        return $this->fetchOne("SELECT COUNT(*) as articles from article where category='$topic'");
+    }
 
+}
 
 ?>

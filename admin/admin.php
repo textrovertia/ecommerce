@@ -6,7 +6,9 @@
       header('Location: ../index.php');   
   }
   $orders = select_all_orders_controller();
-  $articles = select_all_articles_controller();  
+  $articles = select_all_articles_controller(); 
+  
+  
 ?>
 
 <!DOCTYPE html>
@@ -264,7 +266,7 @@
                   <div class="card-body">
                   <h5>Total Readers:</h5>
                     <span style='font-size: 3rem'>
-                    <?php echo total_readers_controllers() ?>
+                    <?php echo total_readers_controllers()['readers'] ?>
                   </span>
                   </div>
                  
@@ -275,8 +277,8 @@
                   <div class="card-body">
                   <h5>Total Writers:</h5>
                     <span style='font-size: 3rem'>
-                    <?php echo total_writers_controllers();
-                      
+                    <?php echo total_writers_controllers()['writers'];
+  
                         
                     ?>
                   </span>
@@ -411,6 +413,13 @@
             </div>
            
           </div>
+
+          <div id="hidden">
+                <div id="finance_articles">
+                  <?php echo total_articles_on_topic_controller('finance')['articles'] ?>
+                
+                </div>
+          </div>
         </main>
 
         <!-- Footer -->
@@ -440,7 +449,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/chart-pie-demo.js"></script>
+    <script src="../assets/js/piechart.js"></script>
 
     <script src="../assets/js/chart-bar-demo.js"></script>
     <script

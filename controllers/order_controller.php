@@ -37,4 +37,8 @@ function select_all_articles_controller(){
     return $article->select_all_articles();
 }
 
+function total_articles_on_topic_controller($topic){
+    $article = new Order();
+    return $article->total_articles_on_topic($topic);
+}
 ?>
