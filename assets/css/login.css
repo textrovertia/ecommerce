@@ -17,3 +17,15 @@ span{
 select{
     border-bottom: 2em;
 }
+
+.wrong{
+    color: red;
+}
+
+.correct{
+    color: green;
+}
+
+.error{
+    font-size: 0.4em;
+}

@@ -48,6 +48,14 @@
           .article-text{
             font-size: 0.7rem;
           }
+
+          #hidden{
+            display: none; 
+          }
+
+          .fas{
+            color: #f56a6a !important
+          }
         </style>
     </head>
   <body class="sb-nav-fixed">
@@ -60,7 +68,7 @@
         id="sidebarToggle"
         href="#!"
       >
-        <i class="fas fa-bars"></i>
+        <i style='color: #f56a6a ' class="fas fa-bars"></i>
       </button>
       <!-- Navbar Search-->
       <form
@@ -81,7 +89,7 @@
             aria-describedby="btnNavbarSearch"
           />
           <button class="btn" id="btnNavbarSearch" type="button" style='background: #eff1f2'>
-            <i class="fas fa-search"></i>
+            <i style ='color: #f56a6a' class="fas fa-search"></i>
           </button>
         </div>
       </form>
@@ -95,7 +103,7 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
-            ><i class="fas fa-user fa-fw"></i
+            ><i style ='color: #f56a6a' class="fas fa-user fa-fw"></i
           ></a>
           <ul
             class="dropdown-menu dropdown-menu-end"
@@ -115,7 +123,7 @@
               <div class="sb-sidenav-menu-heading">Core</div>
               <a class="nav-link" href="#">
                 <div class="sb-nav-link-icon">
-                  <i class="fas fa-tachometer-alt"></i>
+                  <i style ='color: #f56a6a' class="fas fa-tachometer-alt"></i>
                 </div>
                 Users
               </a>
@@ -129,11 +137,11 @@
                 aria-controls="collapseLayouts"
               >
                 <div class="sb-nav-link-icon">
-                  <i class="fas fa-columns"></i>
+                  <i style ='color: #f56a6a' class="fas fa-columns"></i>
                 </div>
                 Graphs
                 <div class="sb-sidenav-collapse-arrow">
-                  <i class="fas fa-angle-down"></i>
+                  <i style ='color: #f56a6a' class="fas fa-angle-down"></i>
                 </div>
               </a>
               <div
@@ -160,11 +168,11 @@
                 aria-controls="collapsePages"
               >
                 <div class="sb-nav-link-icon">
-                  <i class="fas fa-book-open"></i>
+                  <i style ='color: #f56a6a' class="fas fa-book-open"></i>
                 </div>
                 Articles
                 <div class="sb-sidenav-collapse-arrow">
-                  <i class="fas fa-angle-down"></i>
+                  <i style ='color: #f56a6a' class="fas fa-angle-down"></i>
                 </div>
               </a>
               <div
@@ -187,7 +195,7 @@
                   >
                     Authentication
                     <div class="sb-sidenav-collapse-arrow">
-                      <i class="fas fa-angle-down"></i>
+                      <i style ='color: #f56a6a' class="fas fa-angle-down"></i>
                     </div>
                   </a>
                   <div
@@ -214,7 +222,7 @@
                   >
                     Error
                     <div class="sb-sidenav-collapse-arrow">
-                      <i class="fas fa-angle-down"></i>
+                      <i style ='color: #f56a6a' class="fas fa-angle-down"></i>
                     </div>
                   </a>
                   <div
@@ -234,12 +242,12 @@
               <div class="sb-sidenav-menu-heading">Addons</div>
               <a class="nav-link" href="charts.html">
                 <div class="sb-nav-link-icon">
-                  <i class="fas fa-chart-area"></i>
+                  <i style ='color: #f56a6a' class="fas fa-chart-area"></i>
                 </div>
                 Charts
               </a>
               <a class="nav-link" href="tables.html">
-                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                <div class="sb-nav-link-icon"><i style ='color: #f56a6a' class="fas fa-table"></i></div>
                 Tables
 
             
@@ -290,14 +298,14 @@
             </div>
 
             <header class="major">
-              <h3>Graphs</h3>
+              <h3 class='mt-4'>Graphs</h3>
             </header>
             
             <div class="row">
               <div class="col-xl-6">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <i class="fas fa-chart-area me-1"></i>
+                    <i style ='color: #f56a6a' class="fas fa-chart-area me-1"></i>
                     Most Popular Categories (by Articles Written)
                   </div>
                   <div class="card-body">
@@ -308,7 +316,7 @@
               <div class="col-xl-6">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <i class="fas fa-chart-bar me-1"></i>
+                    <i style ='color: #f56a6a' class="fas fa-chart-bar me-1"></i>
                     Bar Chart Example
                   </div>
                   <div class="card-body">
@@ -320,12 +328,12 @@
 
             <!-- Table -->
             <header class="major">
-              <h3>Orders</h3>
+              <h3 class='mt-4'>Orders</h3>
             </header>
         
             <div class="card mb-4">
               <div class="card-header">
-                <i class="fas fa-table me-1"></i>
+                <i style ='color: #f56a6a' class="fas fa-table me-1"></i>
                 Orders
               </div>
               <div class="card-body">
@@ -417,7 +425,12 @@
           <div id="hidden">
                 <div id="finance_articles">
                   <?php echo total_articles_on_topic_controller('finance')['articles'] ?>
-                
+                </div>
+                <div id="lifestyle_articles">
+                  <?php echo total_articles_on_topic_controller('lifestyle')['articles'] ?>
+                </div>
+                <div id="tech_articles">
+                  <?php echo total_articles_on_topic_controller('technology')['articles'] ?>
                 </div>
           </div>
         </main>

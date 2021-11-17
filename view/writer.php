@@ -104,7 +104,7 @@
              <header class="major">
               <h2>Add New Article</h2>
             </header>
-                <form action="../actions/add_article.php" method="post" >
+                <form action="../actions/add_article.php" method="post" enctype='multipart/form-data'>
                     <!-- Article Title -->
                     <div class="row gtr-uniform">
                     <div class="col-6 col-12-xsmall">

@@ -5,13 +5,15 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 // Pie Chart Example
 var ctx = document.getElementById("myPieChart");
 var no_of_finance = document.getElementById('finance_articles').innerText
-console.log(no_of_finance)
+var no_of_lifestyle = document.getElementById('lifestyle_articles').innerText
+var no_of_tech = document.getElementById('tech_articles').innerText
+console.log(no_of_tech)
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
     labels: ["Finance", "Lifestyle", "Tech"],
     datasets: [{
-      data: [no_of_finance, 15.58, 11.25],
+      data: [no_of_finance, no_of_lifestyle, no_of_tech],
       backgroundColor: ['#007bff', '#dc3545', '#ffc107'],
     }],
   },
