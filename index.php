@@ -40,23 +40,20 @@
           <section id="banner">
             <div class="content">
               <header>
-                <h1>Crypto makes a comeback!<br /></h1>
+                <h1>2 Men Convicted of Killing Malcolm X Will Be Exonerated Decades Later<br /></h1>
                 <p>Story by Princess Asante</p>
               </header>
               <p>
-                Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-                aliquam facilisis ante interdum congue. Integer mollis, nisl
-                amet convallis, porttitor magna ullamcorper, amet egestas
-                mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id
-                euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor
-                sit nullam.
+              The 1966 convictions of the men are expected to be thrown out after a lengthy investigation, validating long-held doubts about who killed the civil rights leader.
+              Two of the men found guilty of the assassination of Malcolm X are expected to have their convictions thrown out on Thursday, 
+              the Manhattan district attorney and lawyers for the two men said, rewriting the official history of one of the most notorious murders of the civil rights era.
               </p>
               <ul class="actions">
                 <li><a href="login/signup.php" class="button big">Learn More</a></li>
               </ul>
             </div>
             <span class="image object">
-              <img src="images/crypto.jpg" alt="" />
+              <img src="images/article_images/malcomx.jpg" alt="" />
             </span>
           </section>
 
@@ -68,13 +65,13 @@
             <div class="posts">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/girl_brown.jpg" alt=""
+                  ><img src="images/article_images/overdose.jpg.jpg" alt=""
                 /></a>
-                <h3>Students refusing to pay student loans</h3>
+                <h3>Overdose Deaths Reached Record High as the Pandemic Spread</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                More than 100,000 Americans died from drug overdoses in the yearlong period ending in April, government researchers said.
+                Americans died of drug overdoses in record numbers as the pandemic spread across the country, federal researchers reported on Wednesday, 
+                the result of lost access to treatment, rising mental health problems and wider availability of dangerously potent street drugs.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -82,13 +79,11 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/plane.jpg" alt=""
+                  ><img src="images/article_images/food.jpg" alt=""
                 /></a>
-                <h3>Air industry in trouble</h3>
+                <h3>A Beginner’s Thanksgiving: 7 Recipes That Lighten the Workload</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                For first-time cooks, or anyone looking to simplify the holiday prep, this special menu minimizes effort and maximizes flavor.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
