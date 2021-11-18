@@ -87,23 +87,29 @@
     
 
 <form method="post" action="../view/cart.php">
-  <div class="row gtr-uniform">
-    <div class="col-6 col-12-xsmall">
-      <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+    <div class="row gtr-uniform">
+      <div class="col-6 col-12-xsmall">
+        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+      </div>
+
+      <div class="col-6 col-12-xsmall">
+        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+      </div>
+
+      <!-- Break -->
+
+
+      <div class="col-12">
+        <select class="form-select" name="demo-category" id="demo-category">
+          <option selected>- Payment Options -</option>
+          <option value="1">Weekly</option>
+          <option value="2">Monthly</option>
+          <option value="3">Yearly</option>
+        </select>
+      </div>
+      <br>
+
     </div>
-    <div class="col-6 col-12-xsmall">
-      <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-    </div>
-    <!-- Break -->
-    <div class="col-12">
-      <select name="demo-category" id="demo-category">
-        <option value="">- Category -</option>
-        <option value="1">Weekly</option>
-        <option value="2">Monthly</option>
-        <option value="3">Yearly</option>
-      </select>
-    </div>
-  </div>
 
     <br>
     <!-- Break -->
