@@ -16,3 +16,7 @@ function select_writers_articles_controller($id){
     return $article->select_writers_articles($id);
 }
 
+function delete_article_controller($id){
+    $article = new NewArticle();
+    return $article->delete_article($id);
+}
