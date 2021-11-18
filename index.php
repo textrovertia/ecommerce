@@ -220,22 +220,19 @@
                 <!-- Section -->
                 <section>
                     <header class="major">
-                    <h2>Get in touch</h2>
+                    <h2>We'd love to hear from you!</h2>
                     </header>
                     <p>
-                    Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-                    velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-                    aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-                    tempus aliquam.
+                      Whether you have questions about features, trials, pricing, need a demo or anything else, our team is ready to hear all your questions!
                     </p>
                     <ul class="contact">
                     <li class="icon solid fa-envelope">
                         <a href="#">information@untitled.tld</a>
                     </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
+                    <li class="icon solid fa-phone">0541282099</li>
                     <li class="icon solid fa-home">
-                        1234 Somewhere Road #8254<br />
-                        Nashville, TN 00000-0000
+                        Ashesi University <br />
+                        1 University Ave, Berekuso
                     </li>
                     </ul>
                 </section>

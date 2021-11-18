@@ -20,7 +20,7 @@
                 $_SESSION['customer_id'] = $data['customer_id'];
                 $_SESSION['customer_email'] = $data['customer_email'];
                 $_SESSION['user_role'] = $data['user_role'];
-                header('Location: ../index.php');
+                header('Location: ../functionalities/payment.php');
             }else{
                 $_SESSION['email_password_set'] = true; 
                 echo 'email does not exist';

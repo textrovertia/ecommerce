@@ -74,7 +74,7 @@
             </header>
             <div class="posts">
               <article>
-                <a href="#" class="image"
+                <a href="../login/signup.php" class="image"
                   ><img src="../images/article_images/entrepreneur.jpeg" alt=""
                 /></a>
                 <h3>3 Lifestyle Practices To Become A Healthier Entrepreneur</h3>
@@ -82,11 +82,11 @@
                 By Cooper Harris, Founder of Klickly. Google's "Young Innovator" and L'Oréal's "Digital Woman of the Year" nominee. Featured in Forbes, Inc. and Mashable.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="../login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
-                <a href="#" class="image"
+                <a href="../login/signup.php" class="image"
                   ><img src="../images/article_images/students.jpg" alt=""
                 /></a>
                 <h3>Kenosha Lifestyle and Retirement Expo helps seniors plan for the future</h3>
@@ -97,11 +97,11 @@
                  held Tuesday at the Parkway Chateau, 12304 75th St.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="../login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
-                <a href="#" class="image"
+                <a href="../login/signup.php" class="image"
                   ><img src="../images/article_images/estate.jpeg" alt=""
                 /></a>
                 <h3>Sprawling $30-Million Estate In The Heart Of Colorado Embraces The Outdoor Lifestyle</h3>
@@ -113,11 +113,11 @@
                  One such stop features a wooden drawbridge and a timber castle.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="../login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
               <article>
-                <a href="#" class="image"
+                <a href="../login/signup.php" class="image"
                   ><img src="../images/article_images/obesity.jpg" alt=""
                 /></a>
                 <h3>Diabesity: The worse by-product of an unhealthy lifestyle</h3>
@@ -129,7 +129,7 @@
                 The likelihood of complication gets magnified exponentially and it can drastically impact the quality and quantity of life.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li><a href="../login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
             </div>
@@ -153,13 +153,13 @@
                     <h2>Menu</h2>
                     </header>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li>
                         <span class="opener">Topics</span>
                         <ul>
-                        <li><a href="view/finance.php">Finance</a></li>
-                        <li><a href="view/tech.php">Tech</a></li>
-                        <li><a href="view/lifestyle.php">Lifestyle</a></li>
+                        <li><a href="finance.php">Finance</a></li>
+                        <li><a href="tech.php">Tech</a></li>
+                        <li><a href="lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
                   
@@ -172,25 +172,22 @@
         
                 <!-- Section -->
                 <section>
-                    <header class="major">
-                    <h2>Get in touch</h2>
-                    </header>
-                    <p>
-                    Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-                    velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-                    aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-                    tempus aliquam.
-                    </p>
-                    <ul class="contact">
-                    <li class="icon solid fa-envelope">
-                        <a href="#">information@untitled.tld</a>
-                    </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
-                    <li class="icon solid fa-home">
-                        1234 Somewhere Road #8254<br />
-                        Nashville, TN 00000-0000
-                    </li>
-                    </ul>
+                  <header class="major">
+                      <h2>We'd love to hear from you!</h2>
+                      </header>
+                      <p>
+                        Whether you have questions about features, trials, pricing, need a demo or anything else, our team is ready to hear all your questions!
+                      </p>
+                      <ul class="contact">
+                      <li class="icon solid fa-envelope">
+                          <a href="#">information@untitled.tld</a>
+                      </li>
+                      <li class="icon solid fa-phone">0541282099</li>
+                      <li class="icon solid fa-home">
+                          Ashesi University <br />
+                          1 University Ave, Berekuso
+                      </li>
+                      </ul>
                 </section>
         
                 <!-- Footer -->

@@ -103,6 +103,9 @@
         <option value="3">Yearly</option>
       </select>
     </div>
+  </div>
+
+    <br>
     <!-- Break -->
     <div class="col-6 col-12-small">
       <input type="checkbox" id="demo-copy" name="demo-copy">
@@ -119,7 +122,7 @@
         <li><input type="reset" value="Reset" /></li>
       </ul>
     </div>
-  </div>
+  
 </form>
 
     
