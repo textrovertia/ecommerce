@@ -35,7 +35,7 @@
         <div class="inner">
           <!-- Header -->
           <header id="header">
-            <a href="../index.html" class="logo"
+            <a href="../index.php" class="logo"
               ><strong>Editorial</strong> by HTML5 UP</a
             >
             <ul class="icons">
@@ -164,8 +164,8 @@
                     </li>
                   
                     <?php echo $login_menu ?>
-                    <li><a href="login/signup.php">Sign Up</a></li>
-                    <li><a href="view/elements.php">Elements</a></li>
+                    <li><a href="../login/signup.php">Sign Up</a></li>
+                    <li><a href="../view/elements.php">Elements</a></li>
                     <?php echo $admin_menu ?>
                     </ul>
                 </nav>
