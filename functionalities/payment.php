@@ -30,59 +30,46 @@
     <header class="major" style="text-align: center;">
         <h1>Student Friendly Packages!</h1>
     </header>
-    <div class="">
 
-        <div class="mx-auto my-auto">
-        <div class="row">
-              <div class="col-md-4 col-sm-12">
-                <div class="card bg-success text-white mb-4">
 
-                  <div class="card-body">Success Card</div>
-                  <div
-                    class="
-                      card-footer
-                      d-flex
-                      align-items-center
-                      justify-content-between
-                    "
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                  </div>
+        <div class="container mx-auto" style="text-align: center;">
+          <div class="row" style="text-align: center;">
+            <div class="col-md-3">
+              <div class="card text-center border-primary mb-3" style="width: 18rem;">
+                <img class="card-img-top mx-auto" style="width: 100px; height: 100px;" src="../images/weekly.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Weekly</b><br>₵10/wk <br>Enjoy access to any news item of your choice. Limited to one device.</p>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12">
-                <div class="card bg-success text-white mb-4">
-               
-                  <div class="card-body">Success Card</div>
-                  <div
-                    class="
-                      card-footer
-                      d-flex
-                      align-items-center
-                      justify-content-between
-                    "
-                  >
-                    <a class="small text-white stretched-link" href="#"
-                      >View Details</a
-                    >
-                    <div class="small text-white">
-                      <i class="fas fa-angle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              
-              
             </div>
+
+
+            <div class="col-md-3">
+              <div class="card text-center border-primary mb-3" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="../images/calendar.png" style="width: 100px; height: 100px;" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Montly</b><br>₵35/month <br>Enjoy access to any news item of your choice. Limit is five devices.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <div class="card text-center border-primary mb-3" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="../images/yearly.png" style="width: 100px; height: 100px;" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><b>Yearly</b><br>₵140/year <br>Enjoy access to any news item of your choice. Unlimited Devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>   
+              
+        </div>
         
-      </div>
-    </div>
+
+
+    <br><br>
+
 
     
 
