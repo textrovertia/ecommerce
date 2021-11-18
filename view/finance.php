@@ -50,7 +50,7 @@
                   echo create_new_article(
                      '#', 
                      '../images/article_images/ken.jpg', 
-                     'Pay Up!', 
+                     'Oye!', 
                      'Ghana’s finance minister laid out plans to slash the budget deficit, 
                      boost economic growth and make the nation’s public finances more sustainable to regain investor confidence.',
                      './story.html'

@@ -18,6 +18,10 @@ class NewArticle extends Order{
         return $this->fetchOne("select * from article where article_id='$id'");
     }
 
+    function select_latest_article(){
+        return $this->fetchOne('SELECT MAX(article_id) as recent_article from article');
+    }
+
 }
 
 

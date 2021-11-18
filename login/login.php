@@ -49,13 +49,14 @@
                 id="password"
                 type="password"
                 name="pass"
+                required
               />
             </div>
 
             <br />
             <br />
 
-            <input type="submit" value="Login" name='login' />
+            <input type="submit" value="Login" name='login' required/>
           </form>
           <div class="p">
             Don't have an account? Sign up

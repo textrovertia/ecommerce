@@ -20,3 +20,13 @@ function delete_article_controller($id){
     $article = new NewArticle();
     return $article->delete_article($id);
 }
+
+function select_one_article_controller($id){
+    $article = new NewArticle();
+    return $article->select_one_article($id);
+}
+
+function select_recent_article(){
+    $article  = new NewArticle;
+    return $article->select_latest_article();
+}
