@@ -30,8 +30,8 @@
         </header>
     
     
-            <div class="container mx-auto" style="text-align: center;">
-              <div class="row" style="text-align: center;">
+            <div class="container">
+              <div class="row justify-content-center">
                 <div class="col-md-3">
                   <div class="card text-center border-primary mb-3" style="width: 18rem;">
                     <img class="card-img-top mx-auto" style="width: 100px; height: 100px;" src="../images/weekly.png" alt="Card image cap">
