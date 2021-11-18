@@ -95,7 +95,9 @@
       </ul>
     </div>
   </div>
-  <button type="submit" onclick="payWithPaystack()" class="btn btn-primary" style="text-align: center;">Subscribe</button>
+  <div style="text-align: center;">
+    <button type="submit" onclick="payWithPaystack()" class="" >Subscribe</button>
+  </div>
 </form>
 
 
