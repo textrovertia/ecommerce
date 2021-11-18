@@ -200,9 +200,8 @@
                     <h2>Menu</h2>
                     </header>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
                     <li>
-                        <span class="opener">Topics</span>
+                        <span class="opener">Categories</span>
                         <ul>
                         <li><a href="view/finance.php">Finance</a></li>
                         <li><a href="view/tech.php">Tech</a></li>

@@ -58,7 +58,7 @@
                   
                   echo create_new_article(
                      '#', 
-                     '../images/article_images/health.jpg', 
+                     '../images/article_images/business.jpg', 
                      'Pay Up!', 
                      ' Africa Health Holdings, a healthcare startup running several hospitals, 
                      has secured $18 million in a Series A round, 

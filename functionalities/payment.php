@@ -54,7 +54,7 @@
     
                 <div class="col-md-3">
                   <div class="card text-center border-primary mb-3" style="width: 18rem;">
-                    <img class="card-img-top mx-auto" src="../images/yearly.png" style="width: 100px; height: 100px;" alt="Card image cap">
+                    <img class="card-img-top mx-auto" src="../images/yearlyc.png" style="width: 100px; height: 100px;" alt="Card image cap">
                     <div class="card-body">
                       <p class="card-text"><b>Yearly</b><br>₵140/year <br>Enjoy access to any news item of your choice. Unlimited Devices.</p>
                     </div>

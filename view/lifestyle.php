@@ -1,6 +1,6 @@
 <?php 
       require_once '../settings/core.php';
-      $login_menu = login_menu('../login/login.php', './login/logout.php', '../login/signup.php');
+      $login_menu = login_menu('../login/login.php', '../login/logout.php', '../login/signup.php');
       $admin_menu = admin_page('../admin/admin.php')
       
 ?>
@@ -164,7 +164,7 @@
                     </li>
                   
                     <?php echo $login_menu ?>
-                    <li><a href="../login/signup.php">Sign Up</a></li>
+                    <!-- <li><a href="../login/signup.php">Sign Up</a></li> -->
                     <li><a href="../view/elements.php">Elements</a></li>
                     <?php echo $admin_menu ?>
                     </ul>
