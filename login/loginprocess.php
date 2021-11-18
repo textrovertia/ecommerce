@@ -25,10 +25,23 @@
                     $_SESSION['customer_id'] = $data['customer_id'];
                     $_SESSION['customer_email'] = $data['customer_email'];
                     $_SESSION['user_role'] = $data['user_role'];
-                    header('Location: ../functionalities/payment.php');
+                    // header('Location: ../functionalities/payment.php');
+
+                    if($_SESSION["customer_id"] && $_SESSION["user_role"] === '1'){
+                        header("Location: ../functionalities/payment.php");
+                    }
+    
+                    elseif($_SESSION["customer_id"] && $_SESSION["user_role"] === '2'){
+                        header("Location: ../functionalities/payment.php");
+                        
+                    }
+                    elseif($_SESSION["customer_id"] && $_SESSION["user_role"] === '3'){
+                        header("Location: ../admin/admin.php");
+                    }
+
                 }else{
                     $_SESSION['email_password_set'] = true; 
-                    echo 'email does not exist';
+                    echo 'Email does not exist';
                     header('Location: ./login.php');
                 }
             }
