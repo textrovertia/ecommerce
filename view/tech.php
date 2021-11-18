@@ -49,27 +49,28 @@
                   require_once '../controllers/article_controller.php';
                   echo create_new_article(
                      '#', 
-                     '../images/article_images/ken.jpg', 
+                     '../images/article_images/teamapt.jpg', 
                      'Pay Up!', 
-                     'Ghana’s finance minister laid out plans to slash the budget deficit, 
-                     boost economic growth and make the nation’s public finances more sustainable to regain investor confidence.',
+                     'Nigerian tech start-up TeamApt is in the market raising its third round of funding at a value of more than US$1 billion,
+                      which will result in the banking software firm joining a spate of Africa-tech companies to become so-called unicorns.',
                      './story.html'
                     ); 
                   
                   echo create_new_article(
                      '#', 
-                     '../images/article_images/ecowas.png', 
+                     '../images/article_images/business.jpg', 
                      'Pay Up!', 
-                     ' With the exception of Mali and Guinea which did not have any representative at the meeting due to their suspension from the regional body over military coup detat,
-                     the meeting was attended by the rest of the ECOWAS countries, as well as Directors-General of Customs agencies from 13 of the 15 member states.',
+                     ' Africa Health Holdings, a healthcare startup running several hospitals, 
+                     has secured $18 million in a Series A round, 
+                     funds that will go toward building its “tech-forward healthcare system” across Ghana, Kenya and Nigeria.',
                      './story.html'
                   );
                   echo create_new_article(
                     '#', 
-                    '../images/article_images/aa.jpg', 
+                    '../images/article_images/covid.jpg', 
                     'Pay Up!', 
-                    'Lemonade Finance, a cross-border app which allows Africans in the diaspora to send and receive money from their home country,
-                    is now available to Ghanaians in the U.K.',
+                    'The unexpected global Covid-19 pandemic forced people, businesses and institutions alike to quickly adapt to a new and uncertain reality. 
+                    A new reality that disrupted our usual way of doing things and isolated us from normal life and people.',
                     './story.html'
                  )
               ?>

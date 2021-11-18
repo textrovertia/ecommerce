@@ -71,11 +71,11 @@ function add_order_details_controller($result2, $prod_id, $qty){
     return $cart_instance->add_order_details($result2, $prod_id, $qty);
 }
 
-function add_payment_controller($amount, $customer_id, $result2, $currency, $order_date){
+function add_payment_controller($amount, $customer_id, $order, $currency, $payment_date){
     //create instance of cart class
     $cart_instance = new Cart();
     //call method from cart class
-    return $cart_instance->add_payment($amount, $customer_id, $result2, $currency, $order_date);
+    return $cart_instance->add_payment($amount, $customer_id, $order, $currency, $payment_date);
 }
 
 function delete_cart_controller($customer_id, $customer_IP){

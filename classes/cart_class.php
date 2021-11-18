@@ -3,7 +3,11 @@ require('../database/connection.php');
 // require('../Login/core.php');
 
 class Cart extends Connection{
-
+    function add_payment($amount, $customer_id, $order, $currency, $payment_date){
+        return $this->query("insert into payment(amt, customer_id, order_id, currency, payment_date) 
+        values('$amount', '$customer_id', '$order', '$currency', '$payment_date')");
+    }
+    
     function add_to_cart($id, $customer_id, $customer_IP, $qty){
         return $this->query("insert into cart(p_id, c_id, ip_add, qty) values
         ('$id', '$customer_id', '$customer_IP', '$qty')");
@@ -45,11 +49,7 @@ class Cart extends Connection{
 
     function add_order_details($result2, $prod_id, $qty){
         return $this->query("insert into orderdetails(order_id, product_id, qty) values ('$result2', '$prod_id', '$qty') ");
-    }
-
-    function add_payment($amount, $customer_id, $result2, $currency, $order_date){
-        return $this->query("insert into payment(amt, customer_id, order_id, currency, payment_date) values ('$amount', 
-        '$customer_id', '$result2', '$currency', '$order_date') ");
+    
     }
 
     function delete_cart($customer_id, $customer_IP){

@@ -40,23 +40,20 @@
           <section id="banner">
             <div class="content">
               <header>
-                <h1>Crypto makes a comeback!<br /></h1>
+                <h1>2 Men Convicted of Killing Malcolm X Will Be Exonerated Decades Later<br /></h1>
                 <p>Story by Princess Asante</p>
               </header>
               <p>
-                Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-                aliquam facilisis ante interdum congue. Integer mollis, nisl
-                amet convallis, porttitor magna ullamcorper, amet egestas
-                mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id
-                euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor
-                sit nullam.
+              The 1966 convictions of the men are expected to be thrown out after a lengthy investigation, validating long-held doubts about who killed the civil rights leader.
+              Two of the men found guilty of the assassination of Malcolm X are expected to have their convictions thrown out on Thursday, 
+              the Manhattan district attorney and lawyers for the two men said, rewriting the official history of one of the most notorious murders of the civil rights era.
               </p>
               <ul class="actions">
                 <li><a href="login/signup.php" class="button big">Learn More</a></li>
               </ul>
             </div>
             <span class="image object">
-              <img src="images/crypto.jpg" alt="" />
+              <img src="images/article_images/malcomx.jpg" alt="" />
             </span>
           </section>
 
@@ -68,13 +65,13 @@
             <div class="posts">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/girl_brown.jpg" alt=""
+                  ><img src="images/article_images/overdose.jpg.jpg" alt=""
                 /></a>
-                <h3>Students refusing to pay student loans</h3>
+                <h3>Overdose Deaths Reached Record High as the Pandemic Spread</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                More than 100,000 Americans died from drug overdoses in the yearlong period ending in April, government researchers said.
+                Americans died of drug overdoses in record numbers as the pandemic spread across the country, federal researchers reported on Wednesday, 
+                the result of lost access to treatment, rising mental health problems and wider availability of dangerously potent street drugs.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -82,13 +79,11 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/plane.jpg" alt=""
+                  ><img src="images/article_images/food.jpg" alt=""
                 /></a>
-                <h3>Air industry in trouble</h3>
+                <h3>A Beginner’s Thanksgiving: 7 Recipes That Lighten the Workload</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                For first-time cooks, or anyone looking to simplify the holiday prep, this special menu minimizes effort and maximizes flavor.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -96,13 +91,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/building.jpg" alt=""
+                  ><img src="images/article_images/house.jpg" alt=""
                 /></a>
-                <h3>Tempus ullamcorper</h3>
+                <h3>House, Mostly Along Party Lines, Censures Gosar for Violent Video</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                The Arizona Republican is the first member of the House to be formally rebuked in more than a decade. He was also removed from two committees.
+
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -110,13 +104,14 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic04.jpg" alt=""
+                  ><img src="images/article_images/leather.jpg" alt=""
                 /></a>
-                <h3>Sed etiam facilis</h3>
+                <h3>
+                  How Americans’ Appetite for Leather in Luxury SUVs Worsens Amazon Deforestation
+                </h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                  An examination of Brazil’s immense tannery industry shows how hides from illegally deforested ranches can easily reach the global marketplace. 
+                  In the United States, much of the demand for Brazilian leather comes from automakers.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -133,13 +128,12 @@
             <div class="posts">
               <article>
                 <a href="#" class="image"
-                  ><img src="images/girl_brown.jpg" alt=""
+                  ><img src="images/article_images/ken.jpg" alt=""
                 /></a>
-                <h3>Students refusing to pay student loans</h3>
+                <h3>Ghanaian Finance Minister Targets Lower Budget Deficit</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                Ghana’s finance minister laid out plans to slash the budget deficit, 
+                boost economic growth and make the nation’s public finances more sustainable to regain investor confidence.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -147,13 +141,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/plane.jpg" alt=""
+                  ><img src="images/article_images/ecowas.png" alt=""
                 /></a>
-                <h3>Air industry in trouble</h3>
+                <h3>ECOWAS Finance Ministers deliberate on Community Levy</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                With the exception of Mali and Guinea which did not have any representative at the meeting due to their suspension from the regional body over military coup d'etat,
+                 the meeting was attended by the rest of the ECOWAS countries, as well as Directors-General of Customs agencies from 13 of the 15 member states.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -161,13 +154,12 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic03.jpg" alt=""
+                  ><img src="images/article_images/aa.jpg" alt=""
                 /></a>
-                <h3>Tempus ullamcorper</h3>
+                <h3>Remittance from UK to Ghana to experience a boost as Lemonade Finance launches in Ghana</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                Lemonade Finance, a cross-border app which allows Africans in the diaspora to send and receive money from their home country,
+                 is now available to Ghanaians in the U.K.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -175,13 +167,13 @@
               </article>
               <article>
                 <a href="#" class="image"
-                  ><img src="images/pic04.jpg" alt=""
+                  ><img src="images/article_images/cocoa.jpg" alt=""
                 /></a>
-                <h3>Sed etiam facilis</h3>
+                <h3>ADB win best cocoa financing institution at Ghana Cocoa Awards</h3>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore. Proin aliquam facilisis ante interdum. Sed nulla amet
-                  lorem feugiat tempus aliquam.
+                The Agricultural Development Bank Limited (ADB) has been adjudged the best Cocoa Financing Institution of the year at the Ghana Cocoa Awards (GCA).
+
+                The award was in recognition of the bank’s contribution towards providing Licensed Buying Companies (LBCs)and local farmers with the needed financial assistance to purchase cocoa and taking banking closer to cocoa farmers in the country.
                 </p>
                 <ul class="actions">
                   <li><a href="login/signup.php" class="button">More</a></li>
@@ -208,9 +200,8 @@
                     <h2>Menu</h2>
                     </header>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
                     <li>
-                        <span class="opener">Topics</span>
+                        <span class="opener">Categories</span>
                         <ul>
                         <li><a href="view/finance.php">Finance</a></li>
                         <li><a href="view/tech.php">Tech</a></li>
@@ -228,22 +219,19 @@
                 <!-- Section -->
                 <section>
                     <header class="major">
-                    <h2>Get in touch</h2>
+                    <h2>We'd love to hear from you!</h2>
                     </header>
                     <p>
-                    Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-                    velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-                    aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-                    tempus aliquam.
+                      Whether you have questions about features, trials, pricing, need a demo or anything else, our team is ready to hear all your questions!
                     </p>
                     <ul class="contact">
                     <li class="icon solid fa-envelope">
                         <a href="#">information@untitled.tld</a>
                     </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
+                    <li class="icon solid fa-phone">0541282099</li>
                     <li class="icon solid fa-home">
-                        1234 Somewhere Road #8254<br />
-                        Nashville, TN 00000-0000
+                        Ashesi University <br />
+                        1 University Ave, Berekuso
                     </li>
                     </ul>
                 </section>

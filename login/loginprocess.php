@@ -3,32 +3,54 @@
     require '../settings/core.php';
     
     if (isset($_POST['login'])){
-        $email = $_POST['email'];
-        $password = $_POST['pass'];
+        if(!empty($_POST['email']) && !empty($_POST['pass'])) {  
+            $email=$_POST['email'];  
+            $password=$_POST['pass'];  
+
     
-        $data = select_one_customer_controller($email);
-        if (!$data){
-            $_SESSION['email_password_set'] = true; 
-            echo 'email does not exist';
-            // header('Location: ./login.php');
-        }else{
-            $hash = $data['customer_pass'];
-            print('done');
-            $authenticated = password_verify($password, $hash);
-        
-            if($authenticated ){
-                $_SESSION['customer_id'] = $data['customer_id'];
-                $_SESSION['customer_email'] = $data['customer_email'];
-                $_SESSION['user_role'] = $data['user_role'];
-                header('Location: ../index.php');
-            }else{
+            $data = select_one_customer_controller($email);
+
+
+
+            if (!$data){
                 $_SESSION['email_password_set'] = true; 
                 echo 'email does not exist';
-                header('Location: ./login.php');
+                // header('Location: ./login.php');
+            }else{
+                $hash = $data['customer_pass'];
+                print('done');
+                $authenticated = password_verify($password, $hash);
+            
+                if($authenticated ){
+                    $_SESSION['customer_id'] = $data['customer_id'];
+                    $_SESSION['customer_email'] = $data['customer_email'];
+                    $_SESSION['user_role'] = $data['user_role'];
+                    // header('Location: ../functionalities/payment.php');
+
+                    if($_SESSION["customer_id"] && $_SESSION["user_role"] === '1'){
+                        header("Location: ../functionalities/payment.php");
+                    }
+    
+                    elseif($_SESSION["customer_id"] && $_SESSION["user_role"] === '2'){
+                        header("Location: ../functionalities/payment.php");
+                        
+                    }
+                    elseif($_SESSION["customer_id"] && $_SESSION["user_role"] === '3'){
+                        header("Location: ../admin/admin.php");
+                    }
+
+                }else{
+                    $_SESSION['email_password_set'] = true; 
+                    echo 'Email does not exist';
+                    header('Location: ./login.php');
+                }
             }
         }
-    
+        else {  
+            echo "All fields are required!";
+            // header('Location: ./login.php');  
+        } 
+      
        
-    }
-
+    }            
 ?>

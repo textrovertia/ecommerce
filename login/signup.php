@@ -30,7 +30,7 @@
       type="image/x-icon"
     />
 
-    <title>Sign Up</title>
+  <title>Sign Up</title>
   </head>
   <body>
     <div class="container-fluid text">
@@ -40,84 +40,91 @@
         </div>
 
         <div class="right-half col-md-6 mx-auto my-auto">
+          <div class="container ">
+            <header class="major">
+              <h2>Sign Up</h2>
+            </header>
 
-          <header class="major">
-            <h2>Sign Up</h2>
-          </header>
+            <form action="../login/registerprocess.php" method="post" id="login-form">
+              
+                <!-- Email -->
+                <div class="form-item">
+                  <label for="login"><h3>Email</h3></label>
+                  <input class="input" id="email" name="email" />
+                  <br>
+                  <span id='email-message'></span>
+                </div>
+                <br />
 
-          <form action="../login/registerprocess.php" method="post" id="login-form">
-            <!-- Email -->
-            <div class="form-item">
-              <label for="login"><h3>Email</h3></label>
-              <input class="input" id="email" name="email" />
-              <br>
-              <span id='email-message'></span>
+                <!-- Username -->
+                <div class="form-item">
+                  <label for="login"><h3>Username</h3></label>
+                  <input class="input" id="username" name="username" />
+                </div>
+                <br />
+
+                <div class="form-item">
+                  <label for="login"><h3>Class</h3></label>
+                  <input class="input" id="class" name="class" />
+                </div>
+                <br />
+
+                <div class="form-item">
+                  <label for="login"><h3>Contact Number</h3></label>
+                  <input class="input" id="number" name="number" />
+                </div>
+                <br />
+
+                <!-- Account Type -->
+
+                <div class="form-item col-12">
+                <label for="account-type"><h3>Account Type</h3></label>
+                  <select name="account-type" class='input' id="account-type">
+                    <option value=""> Select User Type </option>
+                    <option value="1">Reader</option>
+                    <option value="2">Writer</option>
+                  </select>
+                </div>
+                <br />
+
+
+                <!-- Password -->
+                <div class="form-item">
+                  <label for="password"><h3>Password</h3></label>
+                  <input
+                    class="input"
+                    id="password"
+                    type="password"
+                    name="password"
+                  />
+                </div>
+                <br />
+
+                <!-- Repeat Password -->
+                <div class="form-item">
+                  <label for="password"><h3>Repeat Password</h3></label>
+                  <input
+                    class="input"
+                    id="repeat-password"
+                    type="password"
+                    name="repeat-password"
+                  />
+                </div>
+
+                <br>
+                <!-- <a href="../functionalities/payment.php"> -->
+                <input type="submit" value="Sign Up" name="signupButton"/>
+
             </div>
-            <br />
-
-            <!-- Username -->
-            <div class="form-item">
-              <label for="login"><h3>Username</h3></label>
-              <input class="input" id="username" name="username" />
-            </div>
-            <br />
-
-            <div class="form-item">
-              <label for="login"><h3>Class</h3></label>
-              <input class="input" id="class" name="class" />
-            </div>
-            <br />
-
-            <div class="form-item">
-              <label for="login"><h3>Contact Number</h3></label>
-              <input class="input" id="number" name="number" />
-            </div>
-            <br />
-
-             <!-- Account Type -->
-             <div class="form-item">
-              <label for="account-type"><h3>Account Type</h3></label>
-              <select name="account-type" class='input' id="account-type">
-                <option value="1">Reader</option>
-                <option value="2">Writer</option>
-              </select>
-            </div>
-            <br />
-
-
-            <!-- Password -->
-            <div class="form-item">
-              <label for="password"><h3>Password</h3></label>
-              <input
-                class="input"
-                id="password"
-                type="password"
-                name="password"
-              />
-            </div>
-            <br />
-
-            <!-- Repeat Password -->
-            <div class="form-item">
-              <label for="password"><h3>Repeat Password</h3></label>
-              <input
-                class="input"
-                id="repeat-password"
-                type="password"
-                name="repeat-password"
-              />
-            </div>
 
             <br />
             <br />
 
-            <!-- <a href="../functionalities/payment.php"> -->
-              <input type="submit" value="Sign Up" name="signupButton"/>
-            </a>
+
           </form>
           <div class="p">
             Already have an account? Log in
-            <span> <a href="./login.html">here</a> </span>
+            <span> <a href="./login.php">here</a> </span>
           </div>
         </div>
       </div>
