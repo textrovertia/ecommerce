@@ -205,9 +205,9 @@
                     data-bs-parent="#sidenavAccordionPages"
                   >
                     <nav class="sb-sidenav-menu-nested nav">
-                      <a class="nav-link" href="login.html">Login</a>
-                      <a class="nav-link" href="register.html">Register</a>
-                      <a class="nav-link" href="password.html"
+                      <a class="nav-link" href="login.php">Login</a>
+                      <a class="nav-link" href="register.php">Register</a>
+                      <a class="nav-link" href="password.php"
                         >Forgot Password</a
                       >
                     </nav>
