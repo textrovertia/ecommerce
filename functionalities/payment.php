@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,96 +28,98 @@
     <header class="major" style="text-align: center;">
         <h1>Student Friendly Packages!</h1>
     </header>
+    <div class="">
 
+        <div class="mx-auto my-auto">
+        <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="card bg-success text-white mb-4">
 
-        <div class="container mx-auto" style="text-align: center;">
-          <div class="row" style="text-align: center;">
-            <div class="col-md-3">
-              <div class="card text-center border-primary mb-3" style="width: 18rem;">
-                <img class="card-img-top mx-auto" style="width: 100px; height: 100px;" src="../images/weekly.png" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text"><b>Weekly</b><br>₵10/wk <br>Enjoy access to any news item of your choice. Limited to one device.</p>
+                  <div class="card-body">Success Card</div>
+                  <div
+                    class="
+                      card-footer
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Details</a
+                    >
+                    <div class="small text-white">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            <div class="col-md-3">
-              <div class="card text-center border-primary mb-3" style="width: 18rem;">
-                <img class="card-img-top mx-auto" src="../images/calendar.png" style="width: 100px; height: 100px;" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text"><b>Montly</b><br>₵35/month <br>Enjoy access to any news item of your choice. Limit is five devices.</p>
+              <div class="col-md-4 col-sm-12">
+                <div class="card bg-success text-white mb-4">
+               
+                  <div class="card-body">Success Card</div>
+                  <div
+                    class="
+                      card-footer
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                    "
+                  >
+                    <a class="small text-white stretched-link" href="#"
+                      >View Details</a
+                    >
+                    <div class="small text-white">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-
-            <div class="col-md-3">
-              <div class="card text-center border-primary mb-3" style="width: 18rem;">
-                <img class="card-img-top mx-auto" src="../images/yearly.png" style="width: 100px; height: 100px;" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text"><b>Yearly</b><br>₵140/year <br>Enjoy access to any news item of your choice. Unlimited Devices.</p>
-                </div>
-              </div>
-            </div>
-          </div>   
               
-        </div>
+              
+              
+            </div>
         
-
-
-    <br><br>
-
+      </div>
+    </div>
 
     
 
+
+<form method="post" id="paymentForm" action="#">
 <form method="post" action="../view/cart.php">
-    <div class="row gtr-uniform">
-      <div class="col-6 col-12-xsmall">
-        <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-      </div>
 
-      <div class="col-6 col-12-xsmall">
-        <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-      </div>
-
-      <!-- Break -->
-
-
-      <div class="col-12">
-        <select class="form-select" name="demo-category" id="demo-category">
-          <option selected>- Payment Options -</option>
-          <option value="1">Weekly</option>
-          <option value="2">Monthly</option>
-          <option value="3">Yearly</option>
-        </select>
-      </div>
-      <br>
-
+  <div class="row gtr-uniform">
+    <div class="col-6 col-12-xsmall">
+      <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
     </div>
-
-    <br>
+    <div class="col-6 col-12-xsmall">
+      <input type="email" name="email-address" id="email-address" value="" placeholder="Email" />
+    </div>
     <!-- Break -->
-    <div class="col-6 col-12-small">
-      <input type="checkbox" id="demo-copy" name="demo-copy">
-      <label for="demo-copy">Email me a copy</label>
-    </div>
-    <div class="col-6 col-12-small">
-      <input type="checkbox" id="demo-human" name="demo-human" checked>
-      <label for="demo-human">I am a human</label>
+    <div class="col-12">
+      <select name="amount" id="amount">
+        <option value="">- Category -</option>
+        <option value="10">Weekly</option>
+        <option value="20">Monthly</option>
+        <option value="30">Yearly</option>
+      </select>
     </div>
     <!-- Break -->
     <div class="col-12">
       <ul class="actions">
-        <li><input type="submit" value="Subscribe" class="primary" /></li>
-        <li><input type="reset" value="Reset" /></li>
       </ul>
     </div>
-  
+  </div>
+  <button type="submit" onclick="payWithPaystack()" class="btn btn-primary">Subscribe</button>
 </form>
+
+
+<!-- Paystack inline javascript -->
+<script src="https://js.paystack.co/v1/inline.js"></script> 
 
     
       </div>
+
 
     <!-- Bootstrap -->
     <script
@@ -135,7 +135,26 @@
   </body>
 </html>
 
+<script>
+  const paymentForm = document.getElementById('paymentForm');
+  paymentForm.addEventListener("submit", payWithPaystack, false);
 
-<form>
+  // PAYMENT FUNCTION
+  function payWithPaystack(e) {
+    e.preventDefault();
+    let handler = PaystackPop.setup({
+      key: 'pk_test_024c71c5d110df4af6f6bee1717713f4c698f0fd', // Replace with your public key
+      email: document.getElementById("email-address").value,
+      amount: document.getElementById("amount").value * 100,
+      currency:'GHS',
+      onClose: function(){
+      alert('Window closed.');
+      },
+      callback: function(response){
+        window.location = `../functionalities/payment_action.php?email=${document.getElementById("email-address").value}&amount=${document.getElementById("amount").value}&reference=${response.reference}`
+      }
+    });
+    handler.openIframe();
+  }
 
-
+</script>
