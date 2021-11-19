@@ -87,7 +87,7 @@
                 /></a>
                 <h3><?php echo $article['article_title'] ?></h3>
                 <p>
-                <?php echo $article['article_text'] ?>
+                <?php echo substr($article['article_text'], 0, 120).'...' ?>
                 </p>
                 <ul class="actions">
                   <li><a href="./story.php?id=<?php echo $article['article_id'] ?>" class="button">More</a></li>
@@ -124,9 +124,9 @@
                     <li>
                         <span class="opener">Topics</span>
                         <ul>
-                        <li><a href="finance.php">Finance</a></li>
-                        <li><a href="tech.php">Tech</a></li>
-                        <li><a href="lifestyle.php">Lifestyle</a></li>
+                        <li><a href="./finance.php">Finance</a></li>
+                        <li><a href="./tech.php">Tech</a></li>
+                        <li><a href="./lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
                   
@@ -148,7 +148,7 @@
                       </p>
                       <ul class="contact">
                       <li class="icon solid fa-envelope">
-                          <a href="#">information@untitled.tld</a>
+                      <a href="mailto:nanna.abankwah@ashesi.edu.gh" target='_blank'>kase3bo@gmail.com</a>
                       </li>
                       <li class="icon solid fa-phone">0541282099</li>
                       <li class="icon solid fa-home">

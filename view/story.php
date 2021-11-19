@@ -226,13 +226,13 @@
                     <h2>Menu</h2>
                     </header>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="../index.php">Home</a></li>
                     <li>
-                        <span class="opener">Topics</span>
+                        <span class="opener">Categories</span>
                         <ul>
-                        <li><a href="../view/finance.php">Finance</a></li>
-                        <li><a href="../view/tech.php">Tech</a></li>
-                        <li><a href="../view/lifestyle.php">Lifestyle</a></li>
+                        <li><a href="./finance.php">Finance</a></li>
+                        <li><a href="./tech.php">Tech</a></li>
+                        <li><a href="./lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
                   
@@ -258,7 +258,7 @@
                     </p>
                     <ul class="contact">
                     <li class="icon solid fa-envelope">
-                        <a href="#">information@untitled.tld</a>
+                    <a href="mailto:nanna.abankwah@ashesi.edu.gh" target='_blank'>kase3bo@gmail.com</a>
                     </li>
                     <li class="icon solid fa-phone">(000) 000-0000</li>
                     <li class="icon solid fa-home">
