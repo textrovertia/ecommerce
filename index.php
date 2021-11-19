@@ -1,6 +1,6 @@
   <!-- Sidebar -->
   <?php require_once './settings/core.php';
-      $login_menu = login_menu('./login/login.php', './login/logout.php', '../login/signup.php');
+      $login_menu = login_menu('./login/login.php', './login/logout.php', './login/signup.php');
       $admin_menu = admin_page('./admin/admin.php');
       $writer_page = writer_page('./view/writer.php')
    ?>

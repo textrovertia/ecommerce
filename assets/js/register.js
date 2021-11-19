@@ -62,21 +62,25 @@ $(email).on('input', function(e){
     validateField(e, email, /.+@.+\..+/, 50, '#username-message' ) 
 });
 
-// $(contact).on('input', function(e){
-//     validateField(e, contact, /^[\+]\d{12}$/, 50 )
-// });
+$(contact).on('input', function(e){
+    validateField(e, contact, /^[\+]\d{12}$/, 50 )
+});
 
-// $(city).on('input', function(e){
-//     validateField(e, city, /\S/, 100 ) 
-// });
+$(city).on('input', function(e){
+    validateField(e, city, /\S/, 100 ) 
+});
 
-// $(country).on('input', function(e){
-//     validateField(e, country, /\S/, 100 ) 
-// });
+$(country).on('input', function(e){
+    validateField(e, country, /\S/, 100 ) 
+});
 
-// $(password).on('input', function(e){
-//     validatePassword(e, password, 150 ) 
-// });
+$(password).on('input', function(e){
+    validatePassword(e, password, /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8, 15}$/ , 15 ) 
+});
+
+$(repeatPassword).on('input', function(e){
+     validatePassword(e, repeatPassword, /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8, 15}$/ , 15 ) && $(password).val() === $(repeatPassword).val()
+});
 
 // // Check if it is valid 
 // checkSubmit = (field) => {
