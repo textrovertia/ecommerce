@@ -36,6 +36,10 @@ class Order extends Connection{
         return $this->fetchOne("SELECT COUNT(*) as writers from customer where user_role=2");
     }
 
+    function total_articles(){
+        return $this->fetchOne("SELECT COUNT(*) as articles from article");
+    }
+
     function delete_article($id){
         return $this->query("delete from article where article_id = '$id'");
     }

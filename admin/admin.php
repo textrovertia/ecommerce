@@ -269,7 +269,7 @@
             </header> 
         
             <div class="row">
-              <div class="col-xl-3 col-md-6">
+              <div class="col-xl-3 col-sm-6">
                 <div class="card text-white mb-4"  style='background-color:#f56a6a'>
                   <div class="card-body">
                   <h5>Total Readers:</h5>
@@ -280,7 +280,7 @@
                  
                 </div>
               </div>
-              <div class="col-xl-3 col-md-6">
+              <div class="col-xl-3 col-sm-6">
                 <div class="card text-white mb-4"  style='background-color:#f56a6a'>
                   <div class="card-body">
                   <h5>Total Writers:</h5>
@@ -288,6 +288,20 @@
                     <?php echo total_writers_controllers()['writers'];
   
                         
+                    ?>
+                  </span>
+                  </div>
+                
+                </div>
+              </div>
+
+              <!-- Total Articles -->
+              <div class="col-xl-3 col-sm-6">
+                <div class="card text-white mb-4"  style='background-color:#f56a6a'>
+                  <div class="card-body">
+                  <h5>Articles Written:</h5>
+                    <span style='font-size: 3rem'>
+                    <?php echo total_articles_controller()['articles'];
                     ?>
                   </span>
                   </div>
@@ -396,6 +410,7 @@
                 <img class="card-img-top" src="../images/article_images/<?php echo $article['article_image'] ?>" alt="Card image cap">
                   <div class="card-body">
                   <h5 class="card-title"><?php echo $article['article_title'] ?></h5>
+                  <h6>Writer: <?php echo $article['writer_id'] ?> </h6>
                   <p class='article-text'>
                   <?php echo $article['article_text'] ?>
                   </p>
@@ -408,9 +423,15 @@
                       justify-content-around
                     "
                   >
-                  <i class="fas fa-edit "></i>
-                  <i class="fas fa-trash-alt "></i>
-                  
+
+                 <!-- Edit Article -->
+                  <a href="../actions/delete_article.php?id=''">
+                    <i style='color:white' class="fas fa-edit "></i>
+                  </a>
+                  <!-- Delete button -->
+                  <a href="../actions/delete_article.php?id=<?php echo $article['article_id'] ?>&location=admin">
+                    <i style='color:white' class="fas fa-trash-alt "></i>
+                  </a>
                   </div>
                 </div>
               </div>
@@ -453,22 +474,37 @@
 
       </div>
     </div>
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/scripts.js"></script>
+
+     <!-- jQuery -->
+     <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- Charts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/js/piechart.js"></script>
 
+    <!-- Javascript -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/piechart.js"></script>
     <script src="../assets/js/chart-bar-demo.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
       crossorigin="anonymous"
     ></script>
+
     <script src="../assets/js/datatables-simple-demo.js"></script>
+
+  
   </body>
 </html>

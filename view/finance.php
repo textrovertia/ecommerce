@@ -28,6 +28,53 @@
     />
   </head>
   <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+            <?php
+              require_once '../classes/Header.php';
+              $header = new Header();
+              echo $header->get_html();
+            ?>
+          <!-- Content -->
+          <section>
+            <header class="major">
+              <h1>Finance</h1>
+            </header>
+            <div class="posts">
+              <?php
+                  require_once '../controllers/article_controller.php';
+                  echo create_new_article(
+                     '#', 
+                     '../images/article_images/ken.jpg', 
+                     'Oye!', 
+                     'Ghana’s finance minister laid out plans to slash the budget deficit, 
+                     boost economic growth and make the nation’s public finances more sustainable to regain investor confidence.',
+                     './story.html'
+                    ); 
+                  
+                  echo create_new_article(
+                     '#', 
+                     '../images/article_images/ecowas.png', 
+                     'Pay Up!', 
+                     ' With the exception of Mali and Guinea which did not have any representative at the meeting due to their suspension from the regional body over military coup detat,
+                     the meeting was attended by the rest of the ECOWAS countries, as well as Directors-General of Customs agencies from 13 of the 15 member states.',
+                     './story.html'
+                  );
+                  echo create_new_article(
+                    '#', 
+                    '../images/article_images/aa.jpg', 
+                    'Pay Up!', 
+                    'Lemonade Finance, a cross-border app which allows Africans in the diaspora to send and receive money from their home country,
+                    is now available to Ghanaians in the U.K.',
+                    './story.html'
+                 )
+              ?>
+    
+    </div>
 
           <!-- Menu -->
           <div id="sidebar">
@@ -93,7 +140,7 @@
             </div>
     </div>
     </div>
-    
+
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Main -->
