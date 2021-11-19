@@ -30,3 +30,8 @@ function select_recent_article(){
     $article  = new NewArticle;
     return $article->select_latest_article();
 }
+
+function check_last_payment_controller($customer_id){
+    $article = new NewArticle;
+    return $article->check_last_payment($customer_id);
+}

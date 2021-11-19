@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <?php
      require_once '../settings/core.php';
+     require_once '../controllers/new_article_controller.php';
      $login_menu = login_menu('../login/login.php', '../login/logout.php', '../login/signup.php');
      $admin_menu = admin_page('../admin/admin.php');
      $writer_page = writer_page('../view/writer.php');
      check_login();
 
+     $user_id = $_SESSION['customer_id'];
+     $current_date = strtotime(date('y-m-d'));
+    
+     $payment_check = check_last_payment_controller($user_id); 
+     $payment_date = strtotime($payment_check['payment_date']);
+   
+      echo $current_date;
+      echo $payment_date;
+
+      echo '<br>';
+
+      $difference = ($current_date - $payment_date)/60/60/24;
+
+
+   
     //  Check payment as well
+    
 ?>
 <html>
   <head>

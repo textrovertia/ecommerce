@@ -17,6 +17,8 @@ function check_login(){
 	}
 }
 
+// function check_payment
+
 //function to check for permission 
 function check_permission(){
 	//get session role
