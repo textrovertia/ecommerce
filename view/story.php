@@ -11,18 +11,32 @@
      $current_date = strtotime(date('y-m-d'));
     
      $payment_check = check_last_payment_controller($user_id); 
+
+     if(!$payment_check){
+      header('Location: ../functionalities/payment.php');
+     }
+     
+    //  Get date of most recent payment 
      $payment_date = strtotime($payment_check['payment_date']);
-   
-      echo $current_date;
-      echo $payment_date;
 
-      echo '<br>';
+    //  Compare date to current date, and check plan
+    $difference = ($current_date - $payment_date)/60/60/24;
+    
+    // Check for weekly payment 
+    if($payment_check['amt'] == 10 && $difference > 7){
+      header('Location: ../functionalities/payment.php');
+    }
 
-      $difference = ($current_date - $payment_date)/60/60/24;
+    // Check for monthly payment 
+    if($payment_check['amt'] == 35 && $difference > 30){
+      header('Location: ../functionalities/payment.php');
+    }
 
+    // Check for yearly payment
+    if($payment_check['amt'] == 140 && $difference > 365 ){
+      header('Location: ../functionalities/payment.php');
+    }
 
-   
-    //  Check payment as well
     
 ?>
 <html>
