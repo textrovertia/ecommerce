@@ -84,8 +84,8 @@
       <select class="form-select" name="amount" id="amount">
         <option value="">- Payment Options -</option>
         <option value="10">Weekly</option>
-        <option value="20">Monthly</option>
-        <option value="30">Yearly</option>
+        <option value="35">Monthly</option>
+        <option value="140">Yearly</option>
       </select>
     </div>
     <br>
