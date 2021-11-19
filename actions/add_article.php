@@ -31,7 +31,7 @@
         echo "Congratulations! File Uploaded Successfully.";
         $result = add_article_controller($title, $file, $category, $writer_id, $text);
         if ($result){
-           echo 'Successfully added to db';
+            header("Location: ../view/writer.php");
         }
         else{
             'Could not add product ';

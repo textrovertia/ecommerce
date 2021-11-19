@@ -19,5 +19,8 @@ if($result){
     if ($location == 'admin'){
         header("Location: ../admin/admin.php");
     }
+    if ($location == 'writer'){
+        header("Location: ../view/writer.php");
+    }
 }
 ?>
