@@ -17,6 +17,11 @@ function select_one_customer_controller($c_id){
     return $order_instance->select_one_customer($c_id);
 }
 
+function select_one_order_controller($order_id){
+    $order_instance = new Order(); 
+    return $order_instance->select_one_customer($order_id);
+}
+
 function total_readers_controllers(){
     $order_instance = new Order();
     return $order_instance->total_readers(); 

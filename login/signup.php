@@ -60,18 +60,24 @@
                 <div class="form-item">
                   <label for="login"><h3>Username</h3></label>
                   <input class="input" id="username" name="username" />
+                  <br>
+                  <span id='username-message'></span>
                 </div>
                 <br />
 
                 <div class="form-item">
                   <label for="login"><h3>Class</h3></label>
                   <input class="input" id="class" name="class" />
+                  <br>
+                  <span id='class-message'></span>
                 </div>
                 <br />
 
                 <div class="form-item">
                   <label for="login"><h3>Contact Number</h3></label>
                   <input class="input" id="number" name="number" />
+                  <br>
+                  <span id='number-message'></span>
                 </div>
                 <br />
 
@@ -84,6 +90,9 @@
                     <option value="1">Reader</option>
                     <option value="2">Writer</option>
                   </select>
+
+                  <br>
+                  <span id='account-message'></span>
                 </div>
                 <br />
 
@@ -97,6 +106,9 @@
                     type="password"
                     name="password"
                   />
+
+                  <br>
+                  <span id='pass-message'></span>
                 </div>
                 <br />
 
@@ -109,11 +121,16 @@
                     type="password"
                     name="repeat-password"
                   />
+
+                  <br>
+                  <span id='rpass-message'></span>
                 </div>
 
                 <br>
                 <!-- <a href="../functionalities/payment.php"> -->
                 <input type="submit" value="Sign Up" name="signupButton"/>
+                <br>
+                  <span id='error-message'></span>
 
             </div>
 

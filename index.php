@@ -1,5 +1,6 @@
   <!-- Sidebar -->
-  <?php require_once './settings/core.php';
+  <?php 
+    require_once './settings/core.php';
       $login_menu = login_menu('./login/login.php', './login/logout.php', './login/signup.php');
       $admin_menu = admin_page('./admin/admin.php');
       $writer_page = writer_page('./view/writer.php')
@@ -226,7 +227,7 @@
                     </p>
                     <ul class="contact">
                     <li class="icon solid fa-envelope">
-                        <a href="#">information@untitled.tld</a>
+                        <a href="mailto:nanna.abankwah@ashesi.edu.gh" target='_blank'>kase3bo@gmail.com</a>
                     </li>
                     <li class="icon solid fa-phone">0541282099</li>
                     <li class="icon solid fa-home">

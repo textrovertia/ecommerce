@@ -29,7 +29,7 @@
 -->
 <html>
   <head>
-    <title>Finance</title>
+    <title>Writer's Corner</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -85,7 +85,7 @@
                     </p>
                     <ul class="actions">
                     <li><a href="$buttonlink" class="button primary">Edit</a></li>
-                    <li><a href="$buttonlink" class="button">Delete</a></li>
+                    <li><a href="../actions/delete_article.php?id=<?php echo $article['article_id'] ?>&location=writer" class="button">Delete</a></li>
                     </ul>
                 </article>     
                 <?php    

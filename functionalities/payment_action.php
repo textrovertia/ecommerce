@@ -45,26 +45,8 @@ if(isset($decodedResponse->data->status) && $decodedResponse->data->status === '
     
 
     // echo $customer_id;
-
-    
-
-
-
-    // echo $customer_id;
-    // echo $invoice_no;
-    // echo $order_date;
-    // echo $order_status;
-    // return;
-    // echo $order_status;
-
-    // call controller function to insert into database
-    // $result = add_order_controller($customer_id, $invoice_no, $order_date, $order_status);
-    // $result2 = add_order_controller($customer_id, $invoice_no, $order_date, $order_status);
-
-
-
     // echo $qty;
-    // var_dump($orderDetails);
+    // var_dump($order);
     // return;
     
 
@@ -79,8 +61,8 @@ if(isset($decodedResponse->data->status) && $decodedResponse->data->status === '
 
     // check if insertion was successful
     if($paymentDetails == true) {
-        echo "insertion complete";
-        // header("Location: ../View/cart.php");
+        // echo "insertion complete";
+        header("Location: ../index.php");
     }
     else echo "insertion failed";
     }else{

@@ -61,7 +61,7 @@
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
       <!-- Navbar Brand-->
-      <a class="navbar-brand ps-3" href="#">Kaseɛbo</a>
+      <a class="navbar-brand ps-3" href="../index.php">Kaseɛbo</a>
       <!-- Sidebar Toggle-->
       <button
         class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
@@ -205,9 +205,9 @@
                     data-bs-parent="#sidenavAccordionPages"
                   >
                     <nav class="sb-sidenav-menu-nested nav">
-                      <a class="nav-link" href="login.html">Login</a>
-                      <a class="nav-link" href="register.html">Register</a>
-                      <a class="nav-link" href="password.html"
+                      <a class="nav-link" href="login.php">Login</a>
+                      <a class="nav-link" href="register.php">Register</a>
+                      <a class="nav-link" href="password.php"
                         >Forgot Password</a
                       >
                     </nav>
