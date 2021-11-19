@@ -25,11 +25,15 @@ class NewArticle extends Order{
     function check_last_payment($id){
         $payment = $this->fetchOne("SELECT MAX(pay_id) as payment from payment where customer_id=$id");
         $payment_id = $payment['payment'];
-        return  $this->fetchOne("SELECT * from payment where pay_id=$payment_id");
+        return $this->fetchOne("SELECT * from payment where pay_id=$payment_id");
     }
 
     function select_articles_by_category($category){
         return $this->fetch("select * from article where category='$category'");
+    }
+
+    function select_article_writer($writer_id){
+        return $this->fetchOne("SELECT customer_name from customer where customer_id='$writer_id'");
     }
 
 }

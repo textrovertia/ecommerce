@@ -40,3 +40,8 @@ function select_articles_by_category_controller($category){
     $article = new NewArticle; 
     return $article->select_articles_by_category($category); 
 }
+
+function select_article_writer_controller($writer_id){
+    $article = new NewArticle();
+    return $article->select_article_writer($writer_id);
+}

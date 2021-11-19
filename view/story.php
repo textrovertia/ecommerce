@@ -37,7 +37,13 @@
       header('Location: ../functionalities/payment.php');
     }
 
-    
+    if (!isset($_GET['id'])){
+      header('Location: ../index.php');
+    }
+
+    $article_id = $_GET['id'];
+    $article = select_one_article_controller($article_id);
+    $author = select_article_writer_controller($article['writer_id'])['customer_name'];
 ?>
 <html>
   <head>
@@ -71,12 +77,12 @@
           <!-- Content -->
           <section>
             <header class="main">
-              <h1>Generic</h1>
-              <p>Story by Nanna Oye</p>
+              <h1><?php echo $article['article_title'] ?></h1>
+              <p>Story by <?php echo $author ?></p>
             </header>
 
             <span class="image main"
-              ><img src="images/pic11.jpg" alt=""
+              ><img src="../images/article_images/<?php echo $article['article_image'] ?>" alt=""
             /></span>
 
             <p>

@@ -99,8 +99,6 @@
 <?php
 }
 ?>
-
-             
             </div>
           </section>
         </div>
