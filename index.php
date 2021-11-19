@@ -201,6 +201,7 @@
                     <h2>Menu</h2>
                     </header>
                     <ul>
+                    <li><a href="./index.php">Home</a></li>
                     <li>
                         <span class="opener">Categories</span>
                         <ul>
