@@ -7,43 +7,45 @@
      $writer_page = writer_page('../view/writer.php');
      check_login();
 
-     $user_id = $_SESSION['customer_id'];
-     $current_date = strtotime(date('y-m-d'));
-    
-     $payment_check = check_last_payment_controller($user_id); 
+     if(isset($_SESSION['customer_id'])){
+      $user_id = $_SESSION['customer_id'];
+      $current_date = strtotime(date('y-m-d'));
+      
+      $payment_check = check_last_payment_controller($user_id); 
 
-     if(!$payment_check){
-      header('Location: ../functionalities/payment.php');
-     }
-     
-    //  Get date of most recent payment 
-     $payment_date = strtotime($payment_check['payment_date']);
+      if(!$payment_check){
+        header('Location: ../functionalities/payment.php');
+      }
+      
+      //  Get date of most recent payment 
+      $payment_date = strtotime($payment_check['payment_date']);
 
-    //  Compare date to current date, and check plan
-    $difference = ($current_date - $payment_date)/60/60/24;
-    
-    // Check for weekly payment 
-    if($payment_check['amt'] == 10 && $difference > 7){
-      header('Location: ../functionalities/payment.php');
-    }
+      //  Compare date to current date, and check plan
+      $difference = ($current_date - $payment_date)/60/60/24;
+      
+      // Check for weekly payment 
+      if($payment_check['amt'] == 10 && $difference > 7){
+        header('Location: ../functionalities/payment.php');
+      }
 
-    // Check for monthly payment 
-    if($payment_check['amt'] == 35 && $difference > 30){
-      header('Location: ../functionalities/payment.php');
-    }
+      // Check for monthly payment 
+      if($payment_check['amt'] == 35 && $difference > 30){
+        header('Location: ../functionalities/payment.php');
+      }
 
-    // Check for yearly payment
-    if($payment_check['amt'] == 140 && $difference > 365 ){
-      header('Location: ../functionalities/payment.php');
-    }
+      // Check for yearly payment
+      if($payment_check['amt'] == 140 && $difference > 365 ){
+        header('Location: ../functionalities/payment.php');
+      }
 
-    if (!isset($_GET['id'])){
-      header('Location: ../index.php');
-    }
+      if (!isset($_GET['id'])){
+        header('Location: ../index.php');
+      }
 
-    $article_id = $_GET['id'];
-    $article = select_one_article_controller($article_id);
-    $author = select_article_writer_controller($article['writer_id'])['customer_name'];
+      $article_id = $_GET['id'];
+      $article = select_one_article_controller($article_id);
+      $author = select_article_writer_controller($article['writer_id'])['customer_name'];
+  }
 ?>
 <html>
   <head>
