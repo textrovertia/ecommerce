@@ -29,7 +29,7 @@
 -->
 <html>
   <head>
-    <title>Finance</title>
+    <title>Writer's Corner</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"

@@ -2,7 +2,8 @@
   <?php 
       require_once '../settings/core.php';
       $login_menu = login_menu('../login/login.php', '../login/logout.php', '../login/signup.php');
-      $admin_menu = admin_page('../admin/admin.php')
+      $admin_menu = admin_page('../admin/admin.php');
+      $writer_page = writer_page('./writer.php')
       
 ?>
 <!DOCTYPE html>
@@ -95,9 +96,9 @@
                     <li>
                         <span class="opener">Categories</span>
                         <ul>
-                        <li><a href="view/finance.php">Finance</a></li>
-                        <li><a href="view/tech.php">Tech</a></li>
-                        <li><a href="view/lifestyle.php">Lifestyle</a></li>
+                        <li><a href="./finance.php">Finance</a></li>
+                        <li><a href="./tech.php">Tech</a></li>
+                        <li><a href="./lifestyle.php">Lifestyle</a></li>
                         </ul>
                     </li>
                   

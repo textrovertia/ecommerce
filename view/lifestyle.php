@@ -1,8 +1,12 @@
 <?php 
       require_once '../settings/core.php';
+      require_once '../controllers/new_article_controller.php';
       $login_menu = login_menu('../login/login.php', '../login/logout.php', '../login/signup.php');
-      $admin_menu = admin_page('../admin/admin.php')
-      
+      $admin_menu = admin_page('../admin/admin.php');
+      $writer_page = writer_page('./writer.php');
+
+      $articles = select_articles_by_category_controller('lifestyle');
+     
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +40,7 @@
           <!-- Header -->
           <header id="header">
             <a href="../index.php" class="logo"
-              ><strong>Editorial</strong> by HTML5 UP</a
+              ><strong>Kase3bo</strong> by HTML5 UP</a
             >
             <ul class="icons">
               <li>
@@ -73,65 +77,30 @@
               <h1>Lifestyle</h1>
             </header>
             <div class="posts">
-              <article>
-                <a href="../login/signup.php" class="image"
-                  ><img src="../images/article_images/entrepreneur.jpeg" alt=""
-                /></a>
-                <h3>3 Lifestyle Practices To Become A Healthier Entrepreneur</h3>
-                <p>
-                By Cooper Harris, Founder of Klickly. Google's "Young Innovator" and L'Oréal's "Digital Woman of the Year" nominee. Featured in Forbes, Inc. and Mashable.
-                </p>
-                <ul class="actions">
-                  <li><a href="../login/signup.php" class="button">More</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="../login/signup.php" class="image"
-                  ><img src="../images/article_images/students.jpg" alt=""
-                /></a>
-                <h3>Kenosha Lifestyle and Retirement Expo helps seniors plan for the future</h3>
-                <p>
-                Among the best things about retirement is looking ahead to what lies beyond going to work every day.
 
-                Helping adults plan for that future is what took place at the Lifestyle & Retirement Expo,
-                 held Tuesday at the Parkway Chateau, 12304 75th St.
+            <?php
+            foreach($articles as $article){
+            ?>
+               <article>
+                <a href="./story.php?id=<?php echo $article['article_id'] ?>" class="image"
+                  ><img src="../images/article_images/<?php echo $article['article_image'] ?>" alt=""
+                /></a>
+                <h3><?php echo $article['article_title'] ?></h3>
+                <p>
+                <?php echo $article['article_text'] ?>
                 </p>
                 <ul class="actions">
-                  <li><a href="../login/signup.php" class="button">More</a></li>
+                  <li><a href="./story.php?id=<?php echo $article['article_id'] ?>" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
-                <a href="../login/signup.php" class="image"
-                  ><img src="../images/article_images/estate.jpeg" alt=""
-                /></a>
-                <h3>Sprawling $30-Million Estate In The Heart Of Colorado Embraces The Outdoor Lifestyle</h3>
-                <p>
-                This 145-acre estate property outside Edwards, Colorado, is all about enjoying the great outdoors.
 
-                The aspen-dotted rolling hills contain 10 miles of custom trails designed for hiking, 
-                snowshoeing and snowmobiling. Along the paths are four picnic and play areas to rest and take in the scenery.
-                 One such stop features a wooden drawbridge and a timber castle.
-                </p>
-                <ul class="actions">
-                  <li><a href="../login/signup.php" class="button">More</a></li>
-                </ul>
-              </article>
-              <article>
-                <a href="../login/signup.php" class="image"
-                  ><img src="../images/article_images/obesity.jpg" alt=""
-                /></a>
-                <h3>Diabesity: The worse by-product of an unhealthy lifestyle</h3>
-                <p>
-                Everyone has heard about diabetes and obesity. But have you heard about Diabesity? 
-                Diabesity is a condition in which the person is suffering from both diabetes and obesity together. 
-                We know that both diabetes and obesity are deadly; they increase the chances of heart disease, stroke, kidney disease etc. 
-                Now imagine when they both happen together. How drastically they will eat up your body and make your life disease-some. 
-                The likelihood of complication gets magnified exponentially and it can drastically impact the quality and quantity of life.
-                </p>
-                <ul class="actions">
-                  <li><a href="../login/signup.php" class="button">More</a></li>
-                </ul>
-              </article>
+           
+
+<?php
+}
+?>
+
+             
             </div>
           </section>
         </div>
@@ -167,6 +136,7 @@
                     <!-- <li><a href="../login/signup.php">Sign Up</a></li> -->
                     <li><a href="../view/elements.php">Elements</a></li>
                     <?php echo $admin_menu ?>
+                    <?php echo $writer_page ?>
                     </ul>
                 </nav>
         
@@ -210,3 +180,4 @@
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
+        

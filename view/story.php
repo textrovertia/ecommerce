@@ -41,7 +41,7 @@
 ?>
 <html>
   <head>
-    <title>Generic - Editorial by HTML5 UP</title>
+    <title>Story</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"

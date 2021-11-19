@@ -28,6 +28,10 @@ class NewArticle extends Order{
         return  $this->fetchOne("SELECT * from payment where pay_id=$payment_id");
     }
 
+    function select_articles_by_category($category){
+        return $this->fetch("select * from article where category='$category'");
+    }
+
 }
 
 

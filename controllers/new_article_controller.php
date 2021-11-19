@@ -35,3 +35,8 @@ function check_last_payment_controller($customer_id){
     $article = new NewArticle;
     return $article->check_last_payment($customer_id);
 }
+
+function select_articles_by_category_controller($category){
+    $article = new NewArticle; 
+    return $article->select_articles_by_category($category); 
+}
