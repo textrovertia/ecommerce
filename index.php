@@ -64,7 +64,7 @@
               <h2>Latest Stories</h2>
             </header>
             <div class="posts">
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/overdose.jpg.jpg" alt=""
                 /></a>
@@ -78,7 +78,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/food.jpg" alt=""
                 /></a>
@@ -90,7 +90,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/house.jpg" alt=""
                 /></a>
@@ -103,7 +103,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/leather.jpg" alt=""
                 /></a>
@@ -127,7 +127,7 @@
               <h2>Finance</h2>
             </header>
             <div class="posts">
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/ken.jpg" alt=""
                 /></a>
@@ -140,7 +140,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/ecowas.png" alt=""
                 /></a>
@@ -153,7 +153,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/aa.jpg" alt=""
                 /></a>
@@ -166,7 +166,7 @@
                   <li><a href="login/signup.php" class="button">More</a></li>
                 </ul>
               </article>
-              <article>
+              <article class='article'>
                 <a href="#" class="image"
                   ><img src="images/article_images/cocoa.jpg" alt=""
                 /></a>
@@ -257,5 +257,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
   </body>
 </html>
