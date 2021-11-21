@@ -212,7 +212,6 @@
                     </li>
                   
                     <?php echo $login_menu ?>
-                    <li><a href="view/elements.php">Elements</a></li>
                     <?php echo $admin_menu ?>
                     <?php echo $writer_page ?>
                     </ul>
